@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CLASSPATH=../bin:/usr/share/java/mysql-connector-java-5.1.28.jar
+
+make 
+java -cp $CLASSPATH JDBCShell
