@@ -39,7 +39,7 @@ public class JDBCShell
      * the user input.
      * Input is returned as string.
      *
-     * @param prompt The promp you want to print to the console
+     * @param prompt - the prompt you want to print to the console
      * @return input from the console
      */
     public static String promptInput(String prompt)
@@ -77,7 +77,7 @@ public class JDBCShell
             // Catch exception when user/pass does not exist
             catch(java.sql.SQLException e)
             {
-                System.out.println("Incorrect login info");
+                System.out.println(e.getMessage());
 
                 // Continually ask if user want to try logging in again
                 // or want to quit the program.
@@ -113,28 +113,31 @@ public class JDBCShell
      */
     public static void printMetaData() throws SQLException
     {
-        ResultSet results = null;
-        ResultSetMetaData resultsMetaData = null;
         DatabaseMetaData metadata = null;
 
+        // Try getting metadata from database
         try
         {
             metadata = connection.getMetaData();
         }catch(SQLException e)
         {
-            System.err.println("There was an error in trying to receive the metadata");
+            System.err.println(e.getMessage());
             return;
         }
 
-        results = metadata.getTables(null,null,null,null); // Parameters all null to get
-                                                           // all tables in database
-
-        printDBMetaData(results); 
+        printDBMetaData(metadata); 
         printTableMetaData();
     }
 
-    public static void printDBMetaData(ResultSet tables) throws SQLException
+    /* Prints out the tables present in the current database
+     *
+     * @param tables the tables present in the database
+     * @return none
+     */
+    public static void printDBMetaData(DatabaseMetaData metadata) throws SQLException
     {
+        ResultSet tables = metadata.getTables(null,null,null,null); // Parameters all null to get
+                                                           // all tables in database
 
         System.out.println("TABLES IN DATABASE: ");
 
@@ -145,6 +148,12 @@ public class JDBCShell
         System.out.println(); // print newline to separate from menu
     }
 
+    /* Prints out the names of the columns and its type for 
+     * each table in the database
+     *
+     * @param none
+     * @return none
+     */
     public static void printTableMetaData() throws SQLException
     {
         Statement select = connection.createStatement();
@@ -166,23 +175,31 @@ public class JDBCShell
         }
     }
     
-    public static void insertValue(String[] args, String statement) throws Exception
+    /* Inserts a value into the database given the first part of the
+     * INSERT SQL statement.
+     *
+     * @param table - the name of the table where value is inserted
+     * @param args - the values of each column in the table
+     * @return none
+     */
+    public static void insertValue(String table, String[] args) throws SQLException
     {
         Statement insertStatement = connection.createStatement();
         String value;
+        String statement = "INSERT INTO " + table + " VALUES(" + args[0];
 
-        for(String arg: args)
+        for(int i = 1; i < args.length; i++)
         {
 
             statement = statement + ",";
 
-            if("".equals(arg))
+            if("".equals(args[i]))
             {
                 statement += "NULL";
             }
             else
             {
-                statement = statement + "'" + arg + "'";
+                statement = statement + "'" + args[i] + "'";
             }
         }
         statement += ");";
@@ -190,12 +207,23 @@ public class JDBCShell
         try
         {
             insertStatement.executeUpdate(statement);
+            System.out.println("Successfully entered value to " + table + " table.");
         }catch(java.sql.SQLException e)
         {
             System.out.println(e.getMessage());
+            System.out.println(statement);
         }
     }
-    public static void insertStar() throws Exception
+
+    /* Inserts a star into the star table
+     *
+     * If only one name is given, it is put in the last_name column
+     * and the first_name column is left blank
+     *
+     * @param none
+     * @return none
+     */
+    public static void insertStar() throws SQLException
     {
         // Ask for necessary data
         String firstName = promptInput("Enter first name: ");
@@ -203,8 +231,10 @@ public class JDBCShell
         System.out.println("Following fields are optional. Press ENTER if you do not wish to input a value");
         String dob = promptInput("Enter date in following format: YYYY-MM-DD");
         String url = promptInput("Enter photo URL: ");
-
-        String[] parameters = {firstName,lastName,dob,url};
+        
+        // Put parameters into string array
+        // First parameter is NULL because the id auto increments
+        String[] parameters = {"NULL",firstName,lastName,dob,url};
 
         // If user only provides one name, set it equal to
         // the last name and make the first name empty
@@ -215,11 +245,20 @@ public class JDBCShell
         }
 
         // Prepare SQL statement
-        String insertStatement = "INSERT INTO stars VALUES(NULL";
-        insertValue(parameters,insertStatement);
+        insertValue("stars",parameters);
     }  
 
-    //TODO: test adding customer 
+    /* Inserts a customer into the star table
+     *
+     * If only one name is given, it is put in the last_name column
+     * and the first_name column is left blank
+     *
+     * The credit card entered must be present in the database.
+     * If this is not the case, the insertion is cancelled.
+     *
+     * @param none
+     * @return none
+     */
     public static void insertCustomer() throws Exception
     {
         // Ask for necessary data
@@ -230,7 +269,9 @@ public class JDBCShell
         String email = promptInput("Enter e-mail: ");
         String password = promptInput("Enter password: ");
 
-        String[] parameters = {firstName,lastName,ccID,address,email,password}; 
+        // Put parameters into string array
+        // First parameter is NULL because the id auto increments
+        String[] parameters = {"NULL",firstName,lastName,ccID,address,email,password}; 
 
         // Check if the customer's credit card info is in the database
         // If not, cancel insertion. Otherwise, add customer.
@@ -244,11 +285,18 @@ public class JDBCShell
                                 "Cancelling customer insertion");
         }else
         {
-            String insertStatement = "INSERT INTO customers VALUES(NULL";
-            insertValue(parameters,insertStatement);
+            insertValue("customers",parameters);
         }
     }
 
+    /* Enters the "print movie" submenu. 
+     *
+     * If invalid commands are entered, it continually asks
+     * the user for a valid command. 
+     *
+     * @param none
+     * @return none
+     */
     public static void handlePrint()
     {
         String command;
@@ -278,6 +326,14 @@ public class JDBCShell
         }
     }
 
+    /* Enters the "print movie" submenu. 
+     *
+     * If invalid commands are entered, it continually asks
+     * the user for a valid command. 
+     *
+     * @param none
+     * @return none
+     */
     public static void handleInserts() throws Exception
     {
         String command;
