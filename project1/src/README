@@ -1,0 +1,14 @@
+=== HOW TO RUN ===
+    $./makerun
+
+=== CONTENTS ===
+makefile: 
+    the file that compiles the JDBCShell.java file
+makerun:
+    a shell script that compiles the java code, and then runs it
+JDBCShell.java:
+    the interactive shell where users can interact with mySQL database through.
+createtable.sql:
+    sql file that creates the tables for the moviedb database
+data.sql:
+    sql file that adds data to the moviedb database 

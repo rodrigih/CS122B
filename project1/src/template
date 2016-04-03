@@ -1,0 +1,29 @@
+MAIN MENU
+Please enter a command:
+    p - print Movies given a star
+    i - insert customer or star into database
+    d - delete customer from the database
+    m - print out metadata from the database
+    e - enter a SQL command
+    x - exit menu and return to login
+    q - exit program 
+
+PRINT MENU
+Please enter command:
+    f - first name
+    l - last name
+    b - first and last name
+    i - id
+    x - go back to main menu
+
+INSERT MENU
+please enter a command:
+    s - insert a star
+    c - insert a customer
+    x - go back to main menu
+
+
+My tasks:
+    both inserts
+    metadata
+    both exits
