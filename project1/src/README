@@ -1,9 +1,7 @@
-HOW TO RUN
-==========
+# HOW TO RUN
     $./makerun
 
-CONTENTS
-========
+# CONTENTS
 
 1. makefile: 
     the file that compiles the JDBCShell.java file
