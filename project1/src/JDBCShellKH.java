@@ -1,183 +1,149 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 import java.sql.*;
+//import JDBCFunctions.java;
 
 public class JDBCShellKH
 {
-    // Variables for shell
-    static enum mainCommands{p,i,d,m,e,x,q};
-    static enum insertCommands{s,c,x};
-
-    static Scanner in = new Scanner(System.in);
-    static Connection connection;
-    // Helper functions
-
-    /* Given a prompt, prints out the prompt and reads
-     * the user input.
-     * Input is returned as string.
-     *
-     * @param prompt The promp you want to print to the console
-     * @return input from the console
-     */
-    public static String promptInput(String prompt)
-    {
-        System.out.println(prompt);
-        return in.next();
-    }
-
-    /* Initiates the login for the SQL database.
-     * If user input is incorrect, it allows the user to try again
-     * or quit the program
-     *
-     * @param None
-     * @return None
-     */
-    public static void userLogin()
-    {
-        String user;
-        String pass;
-        boolean quit = false;
-        
-        while(!quit)
-        {
-            // Ask user to username and password
-            System.out.println("Enter login information");
-            user = promptInput("Username: ");
-            pass = promptInput("Password: ");
-
-            // Try connecting to database using entered information
-            try
-            {
-                connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/moviedb",user,pass);
-                quit = true;
-                System.out.println("Login successful.\n");
-            }
-            // Catch exception when user/pass does not exist
-            catch(java.sql.SQLException e)
-            {
-                System.out.println("Incorrect login info");
-
-                // Continually ask if user want to try logging in again
-                // or want to quit the program.
-                do
-                {
-                    user = promptInput("Quit? (Y/N)");
-                    if (user.compareToIgnoreCase("N")== 0)
-                    {
-                            break;
-                    }
-                    else if (user.compareToIgnoreCase("Y")==0)
-                    {
-                        System.out.println("Closing program");
-                        in.close();
-                        quit = true;
-                        break;
-                    }
-                    else
-                    {
-                        System.out.println("Invalid Input. Please enter 'Y' or 'N'");
-                    }
-                }while(true); // Runs until user enters valid input (Y or N)
-            }
-        }
-//        in.close();
-    }
-    //delete customer and handle query commands.
-    //ill be given customer name and sql 
-    public static void printMovies(String input) throws Exception
-    {
-        Statement select = connection.createStatement();
-        ResultSet result;
-        if(input.equals("f")){
-        	String fName = promptInput("Enter first name: ");
-            result = 
-            		select.executeQuery(
-            				"SELECT * FROM movies WHERE id IN "
-            				+ "(SELECT movie_id FROM stars_in_movies a natural JOIN stars b"
-            				+ " WHERE a.star_id = b.id and b.first_name = \""+fName+"\")");
-        }
-        else if(input.equals("l")){
-        	String lName = promptInput("Enter last name: ");
-            result = 
-            		select.executeQuery(
-            				"SELECT * FROM movies WHERE id IN "
-            				+ "(SELECT movie_id FROM stars_in_movies a natural JOIN stars b"
-            				+ " WHERE a.star_id = b.id and b.last_name = \""+lName+"\")");
-        }
-        else if(input.equals("b")){
-        	String fName = promptInput("Enter first name: ");
-        	String lName = promptInput("Enter last name: ");
-            result = 
-            		select.executeQuery(
-            				"SELECT * FROM movies WHERE id IN "
-            				+ "(SELECT movie_id FROM stars_in_movies a natural JOIN stars b"
-            				+ " WHERE a.star_id = b.id and"
-            				+ " b.first_name = \""+fName+"\" and b.last_name = \""+lName+"\")");
-        }
-        else{
-        	String id = promptInput("Enter ID: ");
-            result = 
-            		select.executeQuery(
-            				"SELECT * FROM movies WHERE id IN "
-            				+ "(SELECT movie_id FROM stars_in_movies a natural JOIN stars b"
-            				+ " WHERE a.star_id = \""+id+"\")");
-        }
-        while(result.next()){
-        	System.out.println("\nId = " + result.getInt(1));
-        	System.out.println("Title = " + result.getString(2));
-        	System.out.println("Year = " + result.getInt(3));
-        	System.out.println("Director = "+result.getString(4));
-        	System.out.println("bannerURL = "+result.getString(5));
-        	System.out.println("trailerURL = "+result.getString(6));
-        }
-    }
-    public static void deleteCustomer() throws Exception{
-    	String ccID = promptInput("Enter the customer's credit card ID: ");
-    	Statement update = connection.createStatement();
-    	int result = update.executeUpdate("DELETE FROM customers "
-    			+ "where cc_id = \""+ccID+"\"");
-    	System.out.println("Records deleted: "+result);
-    }
     
-    public static void executeSQLCommand(String input) throws Exception{
-    	String SQLCommand = promptInput("Enter your SQL command: ");
-    	Statement command = connection.createStatement();
-    	if (input.equals("select")){
-            ResultSet result;
-            result = command.executeQuery(SQLCommand);
-            ResultSetMetaData resultMD = result.getMetaData();
-            int count = resultMD.getColumnCount();
-            while(result.next()){
-            	System.out.println(result.getString(1));
-            	if (count < 2){
-            		break;
-            	}
-            	for(int i=2; i<=count; i++){
-            		System.out.println(" | ");
-            		System.out.println(result.getString(i));
-            	}
+    static String MainMenu = 
+        "MAIN MENU\n" + 
+        "\tp - Prints movies given a star\n" +  
+        "\ti - Insert customer or star into database\n" + 
+        "\td - Delete customer from database\n" + 
+        "\tm - Print out metadata from database\n" + 
+        "\te - Enter a SQL command\n"+ 
+        "\tx - Exit menu and return to login\n"+ 
+        "\tq - Exit program\n";
+
+    static String PrintMenu = 
+       "PRINT MENU\n" + 
+       "\tn - Search by Star Name\n" +
+       "\ti - Search by Star ID\n" +
+       "\tx - Go back to main menu\n";
+
+    static String InsertMenu = 
+        "INSERT MENU\n" + 
+        "\ts - Insert star\n" +
+        "\tc - Insert customer\n" +
+        "\tx - Go back to main menu\n";
+
+    /* Enters the "print movie" submenu. 
+     *
+     * If invalid commands are entered, it continually asks
+     * the user for a valid command. 
+     *
+     * @param none
+     * @return none
+     */
+    public static void handlePrint()
+    {
+        String command;
+        boolean run = true;
+
+
+        while(run)
+        {
+            System.out.println(PrintMenu);
+            command = JDBCFunctionsKH.promptInput("Enter command: ");
+            switch(command)
+            {
+                case "n":
+                case "i":
+                    try
+                    {
+                        JDBCFunctionsKH.printMovies(command);
+                    }catch(SQLException e)
+                    {
+                        System.err.println(e.getMessage()); 
+                    }
+                    break;
+                case "x":
+                    run = false;
+                    break;
+                default:
+                    System.out.println("Invalid command entered");
             }
-    	}
-    	else if(input.equals("update")){
-        	int result = command.executeUpdate(SQLCommand);
-        	System.out.println("Records updated: "+result);
-    	}
-    	else if(input.equals("insert")){
-        	int result = command.executeUpdate(SQLCommand);
-        	System.out.println("Records inserted: "+result);		
-    	}else{
-        	int result = command.executeUpdate(SQLCommand);
-        	System.out.println("Records deleted: "+result);
-    	}
+        }
+    }
+
+    /* Enters the "print movie" submenu. 
+     *
+     * If invalid commands are entered, it continually asks
+     * the user for a valid command. 
+     *
+     * @param none
+     * @return none
+     */
+    public static void handleInserts() throws Exception
+    {
+        String command;
+        boolean run = true;
+
+        while(run)
+        {
+            System.out.println(InsertMenu);
+            command = JDBCFunctionsKH.promptInput("Enter Command: ");
+            switch(command)
+            {
+                case "s":
+                    JDBCFunctionsKH.insertStar();
+                    break;
+                case "c":
+                    JDBCFunctionsKH.insertCustomer();
+                    break;
+                case "x":
+                    run = false;
+                    break;
+                default:
+                    System.out.println("Invalid command entered");
+            }
+        }
     }
 
     public static void main(String[] args) throws Exception
     {
-        in.useDelimiter("\\n"); 
+        String command;
+        boolean run = true;
         Class.forName("com.mysql.jdbc.Driver").newInstance(); // Incorporate mySQL driver
-        userLogin();
-        deleteCustomer();
-//        printMovies("b");
-        in.close();
-    }
 
+        // First login into mySQL database
+        JDBCFunctionsKH.userLogin();
+
+        // MAIN SHELL
+        while(run)
+        {
+            System.out.print(MainMenu);
+            command = JDBCFunctionsKH.promptInput("Enter Command:");
+
+            switch(command)
+            {
+                case "p":
+                    handlePrint();
+                    break;
+                case "i":
+                    handleInserts();
+                    break;
+                case "d":
+                    JDBCFunctionsKH.deleteCustomer();
+                    break;
+                case "m":
+                    JDBCFunctionsKH.printMetaData();
+                    break;
+                case "e":
+                    JDBCFunctionsKH.executeSQLCommand();
+                    break;
+                case "x":
+                    System.out.println("Exiting menu and logging out\n");
+                    if(!JDBCFunctionsKH.userLogin()) // if user quits during login
+                        run = false;
+                    break;
+                case "q":
+                    JDBCFunctionsKH.closeConnection();
+                    run = false;
+                    break;
+                default:
+                    System.out.println("Invalid command entered.");
+            }
+        }
+    }
 }
