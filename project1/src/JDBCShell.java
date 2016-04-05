@@ -111,7 +111,8 @@ public class JDBCShell
         Class.forName("com.mysql.jdbc.Driver").newInstance(); // Incorporate mySQL driver
 
         // First login into mySQL database
-        JDBCFunctions.userLogin();
+        if(!JDBCFunctions.userLogin()) // if user quits during login
+            run = false;
 
         // MAIN SHELL
         while(run)
