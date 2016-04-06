@@ -267,46 +267,7 @@ public class JDBCFunctions
         }
     }
 
-
-    // TODO: change this
-    public static void printMovies(String input) throws SQLException
-    {
-        Statement select = connection.createStatement();
-        ResultSet result;
-        if(input.equals("f")){
-            String fName = promptInput("Enter first name: ");
-            result = 
-                    select.executeQuery(
-                            "SELECT * FROM movies WHERE id IN "
-                            + "(SELECT movie_id FROM stars_in_movies a natural JOIN stars b"
-                            + " WHERE a.star_id = b.id and b.first_name = \""+fName+"\")");
-        }
-        else if(input.equals("l")){
-            String lName = promptInput("Enter last name: ");
-            result = 
-                    select.executeQuery(
-                            "SELECT * FROM movies WHERE id IN "
-                            + "(SELECT movie_id FROM stars_in_movies a natural JOIN stars b"
-                            + " WHERE a.star_id = b.id and b.last_name = \""+lName+"\")");
-        }
-        else if(input.equals("b")){
-            String fName = promptInput("Enter first name: ");
-            String lName = promptInput("Enter last name: ");
-            result = 
-                    select.executeQuery(
-                            "SELECT * FROM movies WHERE id IN "
-                            + "(SELECT movie_id FROM stars_in_movies a natural JOIN stars b"
-                            + " WHERE a.star_id = b.id and"
-                            + " b.first_name = \""+fName+"\" and b.last_name = \""+lName+"\")");
-        }
-        else{
-            String id = promptInput("Enter ID: ");
-            result = 
-                    select.executeQuery(
-                            "SELECT * FROM movies WHERE id IN "
-                            + "(SELECT movie_id FROM stars_in_movies a natural JOIN stars b"
-                            + " WHERE a.star_id = \""+id+"\")");
-        }
+    public static void printMoviesFormat(ResultSet result) throws SQLException{
         while(result.next()){
             System.out.println("\nId = " + result.getInt(1));
             System.out.println("Title = " + result.getString(2));
@@ -315,8 +276,50 @@ public class JDBCFunctions
             System.out.println("bannerURL = "+result.getString(5));
             System.out.println("trailerURL = "+result.getString(6));
         }
+        System.out.println();
     }
-    public static void deleteCustomer() throws Exception
+    
+    public static void printMovies(String input) throws SQLException
+    {
+        Statement select = connection.createStatement();
+        ResultSet result;
+        String queryStatement ="SELECT * FROM movies WHERE id IN "
+                + "(SELECT movie_id FROM "
+                + "stars_in_movies a natural JOIN stars b "
+                + "WHERE a.star_id = ";
+        if(input.equals("n")){
+            String name = promptInput("Enter the name of the star: ");
+            String[] splitNames = name.split(" ");
+            if (splitNames.length <= 1){
+            	result = select.executeQuery(queryStatement+ "b.id AND "+
+            			"(b.first_name = \""+ name +"\" OR "+
+            			"b.last_name = \""+ name +"\"))");
+            }
+            else if (splitNames.length == 2){
+            	result = select.executeQuery(queryStatement+"b.id AND "+
+            			"(b.first_name = \""+ name +"\" OR "+
+            			"b.first_name = \""+ splitNames[0] +"\" AND "+
+            			"b.last_name = \""+ splitNames[1] +"\" OR "+
+            			"b.last_name = \""+ name +"\"))");
+            }
+            else{
+            	result = select.executeQuery(queryStatement+"b.id AND "+
+            			"(b.first_name = \""+ splitNames[0] +"\" OR "+
+            			"b.first_name = \""+ splitNames[0]+" "+splitNames[1] +"\" OR "+
+            			"b.first_name = \""+ name +"\" OR "+
+            			"b.last_name = \""+ splitNames[2] +"\" OR "+
+            			"b.last_name = \""+ splitNames[1]+" "+splitNames[2] +"\" OR "+
+            			"b.last_name = \""+ name +"\"))");
+            }
+        }
+        else{
+            String id = promptInput("Enter ID: ");
+            result = select.executeQuery(queryStatement+ "\""+id+"\")");
+        }
+        printMoviesFormat(result);
+    }
+
+        public static void deleteCustomer() throws Exception
     {
         String ccID = promptInput("Enter the customer's credit card ID: ");
         Statement update = connection.createStatement();

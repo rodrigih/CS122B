@@ -17,9 +17,7 @@ public class JDBCShell
 
     static String PrintMenu = 
        "PRINT MENU\n" + 
-       "\tf - Search by first name\n" +
-       "\tl - Search by last name\n" +
-       "\tb - Search by first and last name\n" +
+       "\tn - Search by star name\n" +
        "\ti - Search by Star ID\n" +
        "\tx - Go back to main menu\n";
 
@@ -49,9 +47,7 @@ public class JDBCShell
             command = JDBCFunctions.promptInput("Enter command: ");
             switch(command)
             {
-                case "f":
-                case "l":
-                case "b":
+                case "n":
                 case "i":
                     try
                     {

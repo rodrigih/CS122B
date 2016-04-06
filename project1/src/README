@@ -7,6 +7,7 @@
     the file that compiles the JDBCShell.java file
 2. makerun:
     a shell script that compiles the java code, and then runs it
+    it compiles the file by using the `make` function
 3. JDBCShell.java:
     the interactive shell where users can interact with mySQL database through.
 4. createtable.sql:
