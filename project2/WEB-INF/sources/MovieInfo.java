@@ -5,6 +5,7 @@ import java.sql.*;
 
 public class MovieInfo
 {
+    /*
     public static Connection connectToDatabase()
     {
 
@@ -28,7 +29,7 @@ public class MovieInfo
 
         return connection;
     }
-    
+   */ 
     private static ArrayList<Integer> getIds(Connection connection, String table, int movieid)
     {
         ArrayList<Integer> results = new ArrayList<Integer>();
@@ -90,7 +91,7 @@ public class MovieInfo
     
     public static ArrayList<String> getMovieInfo(String info,int movieid) throws SQLException
     {
-        Connection connection = connectToDatabase();
+        Connection connection = DBConnection.connectToDatabase();
         ArrayList<String> objs = new ArrayList<String>();
         ArrayList<Integer> obj_ids = new ArrayList<Integer>();
 

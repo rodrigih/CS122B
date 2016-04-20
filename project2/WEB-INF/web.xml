@@ -42,8 +42,6 @@
 
 <web-app>
 
-
-
     <display-name>Test Tomcat Connection to MySQL DB</display-name>
 
     <description>
@@ -61,35 +59,43 @@
 
 
 
-  <!--
   <servlet>
 
-    <servlet-name>TomcatTestServlet</servlet-name>
+    <servlet-name>BrowseInfo</servlet-name>
 
-    <servlet-class>TomcatTest</servlet-class>
+    <servlet-class>BrowseInfo</servlet-class>
 
   </servlet>
-
-
-
   <servlet-mapping>
 
-    <servlet-name>TomcatTestServlet</servlet-name>
+    <servlet-name>BrowseInfo</servlet-name>
 
-    <url-pattern>/servlet/TomcatTest</url-pattern>
+    <url-pattern>/servlet/Browse</url-pattern>
 
   </servlet-mapping>
--->
+
+
+  <servlet>
+
+    <servlet-name>MovieList</servlet-name>
+    <jsp-file>/showMovies.jsp</jsp-file>
+    <servlet-class>MovieList</servlet-class>
+
+  </servlet>
+  <servlet-mapping>
+
+    <servlet-name>MovieList</servlet-name>
+
+    <url-pattern>/servlet/MovieList</url-pattern>
+
+  </servlet-mapping>
+
 
 
  <welcome-file-list>
 
-    <welcome-file>/movieList.jsp</welcome-file>
+    <welcome-file>/Browse.jsp</welcome-file>
 
   </welcome-file-list>
-
-
-
-
 
 </web-app>
