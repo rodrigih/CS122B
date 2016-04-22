@@ -6,11 +6,11 @@ import java.util.Set;
 import java.sql.*;
 
 public class Search {
-    Connection connection = DBConnection.connectToDatabase();
+    static Connection connection = DBConnection.connectToDatabase();
 //    ArrayList<Movie> movies = new ArrayList<Movie>();
 //    Set<Movie> movieSet = new HashSet<Movie>();
     
-    public ArrayList<Movie> createList(String keywords) throws SQLException {
+    public static ArrayList<Movie> createList(String keywords) throws SQLException {
         ArrayList<Movie> movies = new ArrayList<Movie>();
         Set<Movie> movieSet = new HashSet<Movie>();
  
@@ -31,7 +31,7 @@ public class Search {
         
     }
     
-    public ArrayList<Movie> getMoviesByStars(String keyword) throws SQLException{
+    private static ArrayList<Movie> getMoviesByStars(String keyword) throws SQLException{
     	String [] splitKeyword = keyword.split(" ");
     	ResultSet result;
         Statement select = connection.createStatement();
@@ -72,7 +72,7 @@ public class Search {
 		return movieList;
     }
     
-    public ArrayList<Movie> getMoviesByGenre(String keyword) throws SQLException
+    private static ArrayList<Movie> getMoviesByGenre(String keyword) throws SQLException
     {
 //    	ResultSet result;
         Statement select = connection.createStatement();
@@ -98,7 +98,7 @@ public class Search {
 		return movieList;
     }
     
-    public ArrayList<Movie> getMoviesByKey(String keyword) throws SQLException{
+    private static ArrayList<Movie> getMoviesByKey(String keyword) throws SQLException{
 //        	ResultSet result;
             Statement select = connection.createStatement();
             ArrayList<Movie> movieList = new ArrayList<Movie>();
