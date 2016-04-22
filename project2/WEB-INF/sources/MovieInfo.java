@@ -89,7 +89,8 @@ public class MovieInfo
         return result;
     }
     
-    public static ArrayList<String> getMovieInfo(String info,int movieid) throws SQLException
+
+    public static ArrayList<String> getMovieInfo(String info,int movieid,boolean ids) throws SQLException
     {
         Connection connection = DBConnection.connectToDatabase();
         ArrayList<String> objs = new ArrayList<String>();
@@ -102,11 +103,55 @@ public class MovieInfo
         
         obj_ids = getIds(connection,info,movieid);
 
-        for(int id:obj_ids)
+        if(ids)
         {
-            objs.add(getInfoFromId(connection,info,id));
+            for(int id:obj_ids)
+            {
+                objs.add(String.valueOf(id));
+            }
+        }
+        else
+        {
+            for(int id:obj_ids)
+            {
+                objs.add(getInfoFromId(connection,info,id));
+            }
         }
 
+        connection.close();
         return objs;
+    }
+
+    public static Movie getSingleMovie(int id)
+    {
+        Movie movie = null;
+
+        Connection conn = DBConnection.connectToDatabase();
+
+        if(conn == null)
+            System.out.println("Error connecting to database");
+        try
+        {
+            Statement statement = conn.createStatement();
+            String query = "SELECT * FROM movies WHERE id=" + id + ";";
+            ResultSet rs = statement.executeQuery(query);
+
+            rs.first();
+
+            movie = new Movie(id,rs.getString("title"),
+                    rs.getInt("year"),
+                    rs.getString("director"),
+                    rs.getString("banner_url"),
+                    rs.getString("trailer_url"));
+            statement.close();
+            rs.close();
+            conn.close();
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
+
+                return movie;
     }
 }

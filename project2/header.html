@@ -21,6 +21,13 @@ nav
     display:inline;
 }
 
+table, tbody
+{
+    float:center; 
+    outline: #000000 solid thin;
+    width:80%;
+}
+
 /*
 #content
 {
@@ -61,6 +68,34 @@ article
     margin-bottom:20px;
     text-align:center;
 }
+
+.pagination
+{
+    display: inline-block;
+    padding:0;
+    margin:0;
+}
+.pagination li
+{
+    display:inline;
+    float:left;
+    padding:8px 16px;
+}
+
+ul.pagination a
+{
+    color:black;
+    padding:8px 16px;
+    text-decoration: none;
+}
+
+div
+{
+    width:80%;
+    margin: 0 auto;
+    float:center;
+}
+
 </style>
 
 <title> FabFlix Browse </title>
@@ -73,14 +108,16 @@ article
 
 <nav>
     <container id="search">
-    <form>
-        <strong class="navMenu">Search: </strong><input type="text" name="keywords" placeholder="Search..."></input>
+    <form action="showMovies.jsp">
+        <strong class="navMenu">Search: </strong>
+        <input type="text" name="key" placeholder="Search..."></input>
     </form>
     </container>
     
     <br>
 
-    <a class="navMenu" href="google.com"><h3>Home</h3></a>
+    <a class="navMenu" href="index.jsp"><h3>Home</h3></a>
     <a class="navMenu" href="Browse.jsp"><h3>Browse</h3></a>
-    <a class="navMenu" href="google.com"><h3>Shopping Cart</h3></a>
+    <a class="navMenu" href="index.jsp"><h3>Shopping Cart</h3></a>
+    <a class="navMenu" href="index.jsp"><h3>Advanced Search</h3></a>
 </nav>

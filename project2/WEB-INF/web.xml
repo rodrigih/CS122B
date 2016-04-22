@@ -86,9 +86,53 @@
 
     <servlet-name>MovieList</servlet-name>
 
-    <url-pattern>/servlet/MovieList</url-pattern>
+    <url-pattern>/showMovies</url-pattern>
 
   </servlet-mapping>
+
+  <servlet>
+
+    <servlet-name>getMovies</servlet-name>
+    <servlet-class>getMovies</servlet-class>
+
+  </servlet>
+  <servlet-mapping>
+
+    <servlet-name>getMovies</servlet-name>
+
+    <url-pattern>/getMovies</url-pattern>
+
+  </servlet-mapping>
+
+  <servlet>
+
+    <servlet-name>getSingleMovie</servlet-name>
+    <servlet-class>getSingleMovie</servlet-class>
+
+  </servlet>
+  <servlet-mapping>
+
+    <servlet-name>getSingleMovie</servlet-name>
+
+    <url-pattern>/getSingleMovie</url-pattern>
+
+  </servlet-mapping>
+
+
+  <servlet>
+
+    <servlet-name>getStar</servlet-name>
+    <servlet-class>getStar</servlet-class>
+
+  </servlet>
+  <servlet-mapping>
+
+    <servlet-name>getStar</servlet-name>
+
+    <url-pattern>/getStar</url-pattern>
+
+  </servlet-mapping>
+
 
 
 

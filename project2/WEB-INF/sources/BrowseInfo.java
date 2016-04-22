@@ -48,8 +48,8 @@ public class BrowseInfo
         // Print each genres in rows. Number of rows TBA
         for(int i = 0; i < genres.size(); i++)
         {
-            link = "showMovies?browseBy=genre&key=" + genres.get(i) + 
-                   "&order=title&desc=false&page=1";
+            link = "getMovies?browseBy=genre&key=" + genres.get(i) + 
+                   "&orderBy=title&desc=false&page=1&ipp=5";
 
 
             if((i%6 == 0) && i != 0)
@@ -77,8 +77,8 @@ public class BrowseInfo
 
         for(int i = 0; i < numAlph.length(); i++)
         {
-            link = "showMovies?browseBy=letter&key=" + numAlph.charAt(i) + 
-                   "%&order=title&desc=false&page=1";
+            link = "getMovies?browseBy=letter&key=" + numAlph.charAt(i) + 
+                   "&orderBy=title&desc=false&page=1&ipp=5";
 
             out.println(linkString(link,Character.toString(numAlph.charAt(i))) + " | ");
         }
