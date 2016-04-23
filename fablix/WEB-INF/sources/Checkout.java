@@ -1,9 +1,9 @@
+package Model;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.*;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,10 +13,10 @@ import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
 /**
  * Servlet implementation class Checkout
  */
-@WebServlet("/Checkout")
 public class Checkout extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -58,7 +58,7 @@ public class Checkout extends HttpServlet {
 		String query = "SELECT * from creditcards WHERE " + "id = '" + ccNum + "' AND first_name = '" + firstName
 				+ "' AND last_name = '" + lastName + "' AND expiration = '" + expirationDate + "'";
 		String query2 = "Select * FROM customers where cc_id = '" + ccNum + "'";
-		Connection connection = DBConnection.connectToDatabase();
+		Connection connection = Model.DBConnection.connectToDatabase();
 		ResultSet result;
 		try {
 			Statement select = connection.createStatement();
@@ -118,6 +118,14 @@ public class Checkout extends HttpServlet {
 			e.printStackTrace();
 		}
 
+        try
+        {
+            connection.close();
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
 		shoppingCart.cart.clear();
 		shoppingCart.clear();
 

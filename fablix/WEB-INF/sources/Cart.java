@@ -1,4 +1,4 @@
-package com.khcart;
+package Model;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import javax.servlet.jsp.JspWriter;
 public class Cart {
 	// List<Movie> cart;
 	java.text.DecimalFormat currency = new java.text.DecimalFormat("$ #,###,##0.00");
-	List<CartItem> cart;
+	List<Model.CartItem> cart;
 	int size = 0;
 	float totalDue;
 

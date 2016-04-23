@@ -1,4 +1,4 @@
-package com.khcart;
+package Model;
 
 public class CartItem {
 	private int movieID;

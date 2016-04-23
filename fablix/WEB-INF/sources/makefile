@@ -37,9 +37,27 @@ getStar: getStar.java
 AdvSearchServlet: AdvSearchServlet.java
 	javac -cp $(CLASSPATH) AdvSearchServlet.java -d $(DEST)
 
+AddToCart: AddToCart.java
+	javac -cp $(CLASSPATH) AddToCart.java -d $(DEST)
+
+Cart: Cart.java
+	javac -cp $(CLASSPATH) Cart.java -d $(DEST)
+
+CartItem: CartItem.java
+	javac -cp $(CLASSPATH) CartItem.java -d $(DEST)
+
+RemoveItem: RemoveItem.java
+	javac -cp $(CLASSPATH) RemoveItem.java -d $(DEST)
+
+LoginServlet: LoginServlet.java
+	javac -cp $(CLASSPATH) LoginServlet.java -d $(DEST)
+
+Checkout: Checkout.java
+	javac -cp $(CLASSPATH) Checkout.java -d $(DEST)
+
 test: test.java
 	javac -cp $(CLASSPATH) test.java
 
 runTest: test.class
 	java -cp $(CLASSPATH) test
-all: DBConnection MovieInfo StarInfo BrowseInfo Movie Search MovieList getMovies getSingleMovie Star getStar AdvSearchServlet
+all: DBConnection MovieInfo StarInfo BrowseInfo Movie Search MovieList getMovies getSingleMovie Star getStar AdvSearchServlet AddToCart Cart CartItem RemoveItem LoginServlet

@@ -5,15 +5,14 @@ import java.io.PrintWriter;
 import javax.servlet.http.*;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Model.*;
 /**
  * Servlet implementation class LoginServlet
  */
-@WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -27,7 +26,7 @@ public class LoginServlet extends HttpServlet {
 		String query2 = "Select id FROM customers WHERE " + "email = '" + email + "' AND password = '" + password + "'";
 		int customerID = 0;
 
-		Connection connection = DBConnection.connectToDatabase();
+		Connection connection = Model.DBConnection.connectToDatabase();
 		ResultSet result;
 		try {
 			Statement select = connection.createStatement();

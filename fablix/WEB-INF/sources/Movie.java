@@ -79,6 +79,7 @@ public class Movie
                 "\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t" + 
                 "<input type='hidden' name='name' value='" + title + "'>\n\t\t\t\t" + 
                 "<input type='hidden' name='id' value='" + id + "'>\n\t\t\t\t" + 
+                "<input type='hidden' name='price' value=10>" + 
                 "<input type='number' name='quantity' value=1 min=1 required >\n\t\t\t\t" + 
                 "<input type='submit' value='Add to cart'>\n\t\t\t" + 
                 "</td>\n\t\t</tr>\n\t\t</form>");
