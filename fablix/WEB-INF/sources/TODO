@@ -1,0 +1,20 @@
+TODO LIST:
+    - Write Browse.jsp
+        - make it so it prints genres and titles in hyperlinks
+        - hyperlinks are to movielist passing parameters
+
+    - Finish writing movieList. 
+        - print table/thead outside of movie function
+        - call movie.printHTML for each
+        - Array of movies or create one movie at a time? (CHOOSE)
+
+    - create single movie page
+        - should be same as movieList with 1 result ^^^
+
+    - create single star page
+
+    - finish Movie class  
+        - include title and stars are hyperlinked
+            - better to do this once single star/movie pages are written
+        - include "Add to shopping cart" button
+            - do this once shopping cart pages are made
