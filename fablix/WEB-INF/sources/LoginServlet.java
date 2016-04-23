@@ -58,7 +58,7 @@ public class LoginServlet extends HttpServlet {
 //		Cookie userName = new Cookie("user", email);
 //		userName.setMaxAge(60);
 //		response.addCookie(userName);
-		response.sendRedirect("/shoppingcart/index.html");
+		response.sendRedirect("/index.jsp");
 	}
 
 }

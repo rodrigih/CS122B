@@ -47,7 +47,7 @@ public class AddToCart extends HttpServlet {
         CartItem item = new CartItem(movieID,name,price,qty);
         shoppingCart.addToCart(item);
         session.setAttribute("cart", shoppingCart);
-        response.sendRedirect("Cart.jsp");
+        response.sendRedirect("/Cart.jsp");
 
 	}
 
