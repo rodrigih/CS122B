@@ -1,0 +1,9 @@
+Like-Predicates
+
+When using the advanced search page, we created an HTML input form to gather the fields that the user will want to search for, using the get method. After doing so, we would pass these fields to the AdvSearchServlet.java file which is a servlet that takes in our input from the form.
+
+After leaving the html page, the AdvSearchServlet.java page we take in the parameters given to us by the html form. Then, we create a string named query becomes the foundation of mySQL statement along with an int count initialized at 0. We then check through each parameter for one that is not blank and once we find one, a statement will be added to the query string and count would be incremented. From then on, any additional parameters that are not blank would be added to the query string. Any additional queries are added with an AND and the parameters are all searched using mySQL's syntax: WHERE string LIKE %parameter%. The mySQL AND is used to ensure that all our results are included within the parameters. 
+
+For the search bar, a similar method is implemented except our mySQL statements use OR's instead of AND's to obtain flexible results.
+
+After checking the last parameters of the html form, we execute our query and we construct a movie objects for the results we receive and create a movielist which will show the user our results.s
