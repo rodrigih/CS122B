@@ -1,0 +1,110 @@
+import java.io.IOException;
+import java.util.HashSet;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
+
+import org.xml.sax.helpers.DefaultHandler;
+
+public class MovieParser extends DefaultHandler
+{
+    private HashSet<Movie> movieToId; 
+    private String buffer;
+    private Movie currentMovie;
+
+    // Constructor
+    public MovieParser()
+    {
+        movieToId = new HashSet<Movie>(); 
+        buffer = "";
+    }
+
+    private void parseDocument(String file)
+    {
+        SAXParserFactory spf = SAXParserFactory.newInstance();
+
+        try
+        {
+            SAXParser sp = spf.newSAXParser();
+
+            sp.parse(file,this);
+
+        }catch(SAXException se)
+        {
+            se.printStackTrace(); 
+        }catch(ParserConfigurationException pce)
+        {
+            pce.printStackTrace(); 
+        }catch(IOException ie)
+        {
+            ie.printStackTrace(); 
+        }
+    }
+
+    // Event Handlers
+    public void startElement(String uri, String localName, String qName,
+           Attributes attributes) throws SAXException
+    {
+        // Reset buffer
+        buffer = "";
+
+        if(qName.equalsIgnoreCase("film"))
+        {
+            //Create new movie class     
+            currentMovie = new Movie();
+        }
+    }
+
+    public void characters(char[] ch, int start, int length) throws SAXException
+    {
+        buffer = new String(ch,start,length);
+    }
+
+    public void endElement(String uri, String localName, String qName) 
+       throws SAXException
+    {
+        switch(qName.toLowerCase())
+        {
+            case "t":
+                currentMovie.setTitle(buffer);
+                break;
+            case "year":
+                currentMovie.setYear(buffer);
+                break;
+            case "dirn":
+                currentMovie.addDirector(buffer);
+                break;
+            case "cat":
+                currentMovie.addGenre(buffer);
+                break;
+            case "film":
+                movieToId.add(currentMovie);
+                break;
+            
+            default:
+                // DO NOTHING
+                break;
+        }
+    }
+
+
+    // For debugging
+    private void printMovies()
+    {
+        for(Movie m: movieToId)
+        {
+            System.out.println(m);
+        }
+    }
+    
+    public static void main(String[] args)
+    {
+        MovieParser spe = new MovieParser();
+        spe.parseDocument(args[0]);
+        spe.printMovies();
+    }
+}

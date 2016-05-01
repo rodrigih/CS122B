@@ -1,7 +1,14 @@
-Movie: Movie.java
-	javac Movie.java -d ../bin
+SOURCES = \
+		  Movie.java \
+		  Star.java \
+		  MovieParser.java
 
-Star: Star.java
-	javac Star.java -d ../bin
+default: all
 
-all: Movie Java
+all: $(SOURCES:.java=.class)
+
+%.class: %.java
+	javac -d ../bin/ $<
+
+clean:
+	$(RM) ../bin/*.class

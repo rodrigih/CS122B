@@ -1,40 +1,30 @@
+import java.util.Collections;
 import java.util.ArrayList;
 
 public class Movie
 {
     // Class Variables
-    private int id;
     private String title;
-    private int year;
+    private String year;
     private ArrayList<String> directors;
     private ArrayList<String> genres;
-    private String b_url;
-    private String t_url;
 
     //Constructor
-    public Movie(int id, String title, int year, ArrayList<String> directors,
-            ArrayList<String> genres,String b_url, String t_url)
+    public Movie(String title, String year, 
+            ArrayList<String> directors, ArrayList<String> genres)
     {
-        this.id = id;
         this.title = title;
         this.year = year;
         this.directors = directors;
         this.genres = genres;
-        this.b_url = b_url;
-        this.t_url = t_url;
     }
 
     public Movie()
     {
-        this(0,"",0,new ArrayList<String>(),new ArrayList<String>(),"","");
+        this("","",new ArrayList<String>(),new ArrayList<String>());
     }
 
     //Getter Methods
-
-    public int getId()
-    {
-        return id;
-    }
 
     public String getTitle()
     {
@@ -42,13 +32,13 @@ public class Movie
     }
 
 
-    public int getYear()
+    public String getYear()
     {
         return year;
     }
 
 
-    public ArrayList<String> getDirectors()
+    public ArrayList<String> getDirector()
     {
         return directors;
     }
@@ -57,44 +47,27 @@ public class Movie
     {
         return genres;
     }
-
-    public String getB_url()
-    {
-        return b_url;
-    }
-
-
-    public String getT_url()
-    {
-        return t_url;
-    }
-
     //Setter Methods
     
-    public void setId(int id)
-    {
-        this.id = id; 
-    }
-
     public void setTitle(String title)
     {
         this.title = title;
     }
 
 
-    public void setYear(int year)
+    public void setYear(String year)
     {
         this.year = year; 
     }
 
-    public void setDirectors(ArrayList<String> directors)
+    public void setDirector(ArrayList<String> directors)
     {
         this.directors = directors; 
     }
 
     public void addDirector(String director)
     {
-        this.directors.add(director); 
+        this.directors.add(director);
     }
 
     public void setGenres(ArrayList<String> genres)
@@ -106,36 +79,25 @@ public class Movie
     {
         this.genres.add(genre);
     }
-
-    public void setB_url(String b_url)
-    {
-        this.b_url = b_url; 
-    }
-
-    public void setT_url(String t_url)
-    {
-        this.t_url = t_url; 
-    }
-
     // Class Methods
     public String toString()
     {
         StringBuffer sb = new StringBuffer();
         sb.append("Movie - ");
-        sb.append("Id: " + getId() + ",");
         sb.append("Title: " + getTitle() + ",");
         sb.append("Year: " + getYear() + ",");
-        
-        // Add Directors
-        sb.append("Directors: {");
-        for(int i = 0; i<directors.size();i++)
+        sb.append("Director: {");
+
+        // Add directors
+        for(int i = 0; i < directors.size(); i++)
         {
             sb.append(directors.get(i));
-            if(i != directors.size()-1)
+            if( i != directors.size()-1)
                 sb.append(",");
             else
                 sb.append("}, ");
         }
+
 
         // Add Genres
         sb.append("Genres: {");
@@ -147,10 +109,40 @@ public class Movie
             else
                 sb.append("}, ");
         }
- 
-        sb.append("Banner URL: " + getB_url() + ",");
-        sb.append("Trailer URL: " + getT_url());
 
         return sb.toString();
+    }
+
+    public int hashCode()
+    {
+        String hashString = "";
+
+        hashString = title + year;
+        for(String dir: directors)
+            hashString += dir;
+        for(String genre: genres)
+            hashString += genre;
+
+        return hashString.hashCode();
+    }
+
+    public boolean equals(Object o)
+    {
+        if( o instanceof Movie)
+        {
+            Movie other = (Movie) o;
+
+            // Sort ArrayLists before comparing
+            Collections.sort(directors);
+            Collections.sort(genres);
+            Collections.sort(other.directors);
+            Collections.sort(other.genres);
+
+            return (title.equals(other.title) &&
+                    year.equals(other.year) &&
+                    directors.equals(other.directors) &&
+                    genres.equals(other.genres));
+        }
+        return false;
     }
 }
