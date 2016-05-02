@@ -4,15 +4,17 @@ import java.util.ArrayList;
 public class Movie
 {
     // Class Variables
+    private String id;
     private String title;
     private String year;
     private ArrayList<String> directors;
     private ArrayList<String> genres;
 
     //Constructor
-    public Movie(String title, String year, 
+    public Movie(String id, String title, String year, 
             ArrayList<String> directors, ArrayList<String> genres)
     {
+        this.id = id;
         this.title = title;
         this.year = year;
         this.directors = directors;
@@ -21,10 +23,15 @@ public class Movie
 
     public Movie()
     {
-        this("","",new ArrayList<String>(),new ArrayList<String>());
+        this("","","",new ArrayList<String>(),new ArrayList<String>());
     }
 
     //Getter Methods
+
+    public String getId()
+    {
+        return id;
+    }
 
     public String getTitle()
     {
@@ -48,6 +55,11 @@ public class Movie
         return genres;
     }
     //Setter Methods
+    
+    public void setId(String id)
+    {
+        this.id = id;
+    }
     
     public void setTitle(String title)
     {
@@ -84,6 +96,7 @@ public class Movie
     {
         StringBuffer sb = new StringBuffer();
         sb.append("Movie - ");
+        sb.append("Id: " + getId() + ",");
         sb.append("Title: " + getTitle() + ",");
         sb.append("Year: " + getYear() + ",");
         sb.append("Director: {");
@@ -94,10 +107,8 @@ public class Movie
             sb.append(directors.get(i));
             if( i != directors.size()-1)
                 sb.append(",");
-            else
-                sb.append("}, ");
         }
-
+        sb.append("}, ");
 
         // Add Genres
         sb.append("Genres: {");
@@ -106,9 +117,8 @@ public class Movie
             sb.append(genres.get(i));
             if( i != genres.size()-1)
                 sb.append(",");
-            else
-                sb.append("}, ");
         }
+        sb.append("} ");
 
         return sb.toString();
     }
@@ -117,7 +127,7 @@ public class Movie
     {
         String hashString = "";
 
-        hashString = title + year;
+        hashString = id + title + year;
         for(String dir: directors)
             hashString += dir;
         for(String genre: genres)
@@ -138,7 +148,8 @@ public class Movie
             Collections.sort(other.directors);
             Collections.sort(other.genres);
 
-            return (title.equals(other.title) &&
+            return (id.equals(other.id) &&
+                    title.equals(other.title) &&
                     year.equals(other.year) &&
                     directors.equals(other.directors) &&
                     genres.equals(other.genres));

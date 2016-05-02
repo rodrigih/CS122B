@@ -1,5 +1,5 @@
 import java.io.IOException;
-import java.util.HashSet;
+import java.util.HashMap;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
@@ -12,18 +12,18 @@ import org.xml.sax.helpers.DefaultHandler;
 
 public class MovieParser extends DefaultHandler
 {
-    private HashSet<Movie> movieToId; 
+    private HashMap<String,Movie> movieToId; 
     private String buffer;
     private Movie currentMovie;
 
     // Constructor
     public MovieParser()
     {
-        movieToId = new HashSet<Movie>(); 
+        movieToId = new HashMap<String,Movie>(); 
         buffer = "";
     }
 
-    private void parseDocument(String file)
+    public HashMap<String,Movie> parseDocument(String file)
     {
         SAXParserFactory spf = SAXParserFactory.newInstance();
 
@@ -43,6 +43,8 @@ public class MovieParser extends DefaultHandler
         {
             ie.printStackTrace(); 
         }
+
+        return movieToId;
     }
 
     // Event Handlers
@@ -69,6 +71,8 @@ public class MovieParser extends DefaultHandler
     {
         switch(qName.toLowerCase())
         {
+            case "fid":
+                currentMovie.setId(buffer);
             case "t":
                 currentMovie.setTitle(buffer);
                 break;
@@ -82,29 +86,12 @@ public class MovieParser extends DefaultHandler
                 currentMovie.addGenre(buffer);
                 break;
             case "film":
-                movieToId.add(currentMovie);
+                movieToId.put(currentMovie.getId(),currentMovie);
                 break;
             
             default:
                 // DO NOTHING
                 break;
         }
-    }
-
-
-    // For debugging
-    private void printMovies()
-    {
-        for(Movie m: movieToId)
-        {
-            System.out.println(m);
-        }
-    }
-    
-    public static void main(String[] args)
-    {
-        MovieParser spe = new MovieParser();
-        spe.parseDocument(args[0]);
-        spe.printMovies();
     }
 }

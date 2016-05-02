@@ -1,7 +1,9 @@
 SOURCES = \
 		  Movie.java \
 		  Star.java \
-		  MovieParser.java
+		  MovieParser.java \
+		  CastParser.java \
+		  StarParser.java
 
 default: all
 
