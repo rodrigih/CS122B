@@ -1,0 +1,127 @@
+<!-- 
+File to test CastParser and StarParser
+
+Output of this file should include the following stars with the following movies:
+
+    Leslie Howard: {AA13}
+    Wendy Hiller: {AA13}
+    Dirk Bogarde: {AA37,AR10,BaD13,BaD29}
+    Robert Morley: {DCs30,FrT30,GPa1,HHa56}}
+
+Output of this file in combination with "testStarParser.xml"
+should be the above stars along with the following stars (with no movies):
+    Glenn Morris
+    Patrick Mower
+-->
+
+<dirfilms>
+    <dirid>AA</dirid>
+    <is>Asquith</is>
+    <castnote>Actors and notes.</castnote>
+    <filmc>
+        <!-- Actors with one movie -->
+        <m>
+            <f>AA13</f>
+            <t>Pygmalion</t>
+            <a>Leslie Howard</a>
+            <p>Sci</p>
+            <r>smug professor</r>
+            <n>Higgins</n>
+            <awards>
+                <award>AAN</award>
+            </awards>
+        </m>
+        <m>
+            <f>AA13</f>
+            <t>Pygmalion</t>
+            <a>Wendy Hiller</a>
+            <p>Inn</p>
+            <r>flower girl</r>
+            <n>Eliza</n>
+            <awards>
+                <award>AAN</award>
+            </awards>
+        </m>
+        <!-- Actor with more than one movie -->
+        <m>
+            <f>AA37</f>
+            <t>Libel</t>
+            <a>Dirk Bogarde</a>
+            <p>Und</p>
+            <r/>
+        </m>
+        <m>
+            <f>AR10</f>
+            <t>Providence</t>
+            <a>Dirk Bogarde</a>
+            <p>Und</p>
+            <r/>
+        </m>
+        <m>
+            <f>BaD13</f>
+            <t>The Blue Lamp</t>
+            <a>Dirk Bogarde</a>
+            <p>Und</p>
+            <r/>
+        </m>
+        <m>
+            <f>BaD29</f>
+            <t>Victim</t>
+            <a>Dirk Bogarde</a>
+            <p>Und</p>
+            <r>homosexual barrister</r>
+        </m>
+        <!-- Actors in a cast.xml but not in star.xml (in many movies)-->
+        <m>
+            <f>DCs30</f>
+            <t>War and Remembrance</t>
+            <a>Robert Morley</a>
+            <p>Vic</p>
+            <r>writer, father of correspondent, killed</r>
+        </m>
+        <m>
+            <f>FrT30</f>
+            <t>The Alphabet Murders</t>
+            <a>Robert Morley</a>
+            <p>Und</p>
+            <r/>
+            <n>Major Hastings</n>
+        </m>
+        <m>
+            <f>GPa1</f>
+            <t>Major Barbara</t>
+            <a>Robert Morley</a>
+            <p>Und</p>
+            <r/>
+        </m>
+        <m>
+            <f>HHa56</f>
+            <t>Of Human Bondage</t>
+            <a>Robert Morley</a>
+            <p>Und</p>
+            <r/>
+        </m>
+        <!-- Repeated Movies/Actors -->
+        <m>
+            <f>HHa56</f>
+            <t>Of Human Bondage</t>
+            <a>Robert Morley</a>
+            <p>Und</p>
+            <r/>
+        </m>
+        <m>
+            <f>HHa56</f>
+            <t>Of Human Bondage</t>
+            <a>Robert Morley</a>
+            <p>Und</p>
+            <r/>
+        </m>
+        <m>
+            <f>HHa56</f>
+            <t>Of Human Bondage</t>
+            <a>Robert Morley</a>
+            <p>Und</p>
+            <r/>
+        </m>
+    </filmc>
+</dirfilms>

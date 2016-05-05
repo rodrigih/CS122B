@@ -1,0 +1,180 @@
+<!-- 
+File to test CastParser and StarParser
+
+Output of this file should include the following stars:
+    Leslie Howard
+    Wendy Hiller
+    Dirk Bogarde
+    Robert Morley
+    Glenn Morris
+    Patrick Mower
+
+Output of this file in combination with "testCastParser.xml"
+should be the above stars along with the following:
+
+    Leslie Howard: {AA13}
+    Wendy Hiller: {AA13}
+    Dirk Bogarde: {AA37,AR10,BaD13,BaD29}
+    Robert Morley: {DCs30,FrT30,GPa1,HHa56}}
+-->
+
+<actors>
+    <!-- Actors -->
+    <actor>
+        <stagename>Leslie Howard</stagename>
+        <dowstart>1930</dowstart>
+        <dowend>1943</dowend>
+        <familyname>Stainer</familyname>
+        <firstname>Leslie</firstname>
+        <gender>M</gender>
+        <dob>1890</dob>
+        <dod>1943</dod>
+        <roletype>romantic intellectual</roletype>
+        <origin>\Hu</origin>
+        <picref/>
+        <notes>
+            <also>PD</also>
+        </notes>
+    </actor>
+    <actor>
+        <stagename>Wendy Hiller</stagename>
+        <dowstart>1937</dowstart>
+        <dowend>1982</dowend>
+        <familyname>Hiller</familyname>
+        <firstname>Wendy</firstname>
+        <gender>F</gender>
+        <dob>1912</dob>
+        <dod>1984+</dod>
+        <roletype>distinguished, inimitable voice</roletype>
+        <origin>\Br</origin>
+        <picref/>
+        <relationships/>
+        <notes/>
+    </actor>
+    <actor>
+        <stagename>Dirk Bogarde</stagename>
+        <dowstart>1947</dowstart>
+        <dowend>1981</dowend>
+        <familyname>Van Den Bogaerd</familyname>
+        <firstname>Derek</firstname>
+        <gender>M</gender>
+        <dob>1921</dob>
+        <dod>1999</dod>
+        <roletype>character</roletype>
+        <origin>\Br</origin>
+        <picref>[9.210]</picref>
+        <relationships/>
+        <notes/>
+    </actor>
+    <actor>
+        <stagename>Robert Morley</stagename>
+        <dowstart>1938</dowstart>
+        <dowend>1982</dowend>
+        <familyname>Morley</familyname>
+        <firstname>Robert</firstname>
+        <gender>M</gender>
+        <dob>1908</dob>
+        <dod>1992</dod>
+        <roletype>portly</roletype>
+        <origin>\Br</origin>
+        <picref/>
+        <relationships/>
+        <notes/>
+    </actor>
+    <!-- Actors in actor.xml but not in cast.xml -->
+    <actor>
+        <stagename>Glenn Morris</stagename>
+        <dowstart>1938</dowstart>
+        <dowend></dowend>
+        <familyname></familyname>
+        <firstname></firstname>
+        <gender>M</gender>
+        <dob></dob>
+        <dod>1992+</dod>
+        <roletype>Tarzan</roletype>
+        <origin>\Ct</origin>
+        <picref/>
+        <relationships/>
+        <notes>
+            <refs>![1]</refs>
+        </notes>
+    </actor>
+    <actor>
+        <stagename>Patrick Mower</stagename>
+        <dowstart>1969</dowstart>
+        <dowend>1981</dowend>
+        <familyname>Mower</familyname>
+        <firstname>Patrick</firstname>
+        <gender>M</gender>
+        <dob>1940</dob>
+        <dod>1984+</dod>
+        <roletype>lead</roletype>
+        <origin>\Br</origin>
+        <picref/>
+        <relationships/>
+        <notes/>
+    </actor>
+    <!-- Repeated Actors -->
+    <actor>
+        <stagename>Leslie Howard</stagename>
+        <dowstart>1930</dowstart>
+        <dowend>1943</dowend>
+        <familyname>Stainer</familyname>
+        <firstname>Leslie</firstname>
+        <gender>M</gender>
+        <dob>1890</dob>
+        <dod>1943</dod>
+        <roletype>romantic intellectual</roletype>
+        <origin>\Hu</origin>
+        <picref/>
+        <notes>
+            <also>PD</also>
+        </notes>
+    </actor>
+    <actor>
+        <stagename>Wendy Hiller</stagename>
+        <dowstart>1937</dowstart>
+        <dowend>1982</dowend>
+        <familyname>Hiller</familyname>
+        <firstname>Wendy</firstname>
+        <gender>F</gender>
+        <dob>1912</dob>
+        <dod>1984+</dod>
+        <roletype>distinguished, inimitable voice</roletype>
+        <origin>\Br</origin>
+        <picref/>
+        <relationships/>
+        <notes/>
+    </actor>
+    <actor>
+        <stagename>Dirk Bogarde</stagename>
+        <dowstart>1947</dowstart>
+        <dowend>1981</dowend>
+        <familyname>Van Den Bogaerd</familyname>
+        <firstname>Derek</firstname>
+        <gender>M</gender>
+        <dob>1921</dob>
+        <dod>1999</dod>
+        <roletype>character</roletype>
+        <origin>\Br</origin>
+        <picref>[9.210]</picref>
+        <relationships/>
+        <notes/>
+    </actor>
+    <actor>
+        <stagename>Robert Morley</stagename>
+        <dowstart>1938</dowstart>
+        <dowend>1982</dowend>
+        <familyname>Morley</familyname>
+        <firstname>Robert</firstname>
+        <gender>M</gender>
+        <dob>1908</dob>
+        <dod>1992</dod>
+        <roletype>portly</roletype>
+        <origin>\Br</origin>
+        <picref/>
+        <relationships/>
+        <notes/>
+    </actor>
+</actors>
+
