@@ -42,10 +42,6 @@ public class EmployeeLoginServlet extends HttpServlet {
 		String query = "SELECT * FROM employees WHERE " + 
             "email = '" + email + "' AND password = '" + password + "';";
 
-		String query2 = "SELECT id FROM employees WHERE " + 
-            "email = '" + email + "' AND password = '" + password + "';";
-
-		int customerID = 0;
 		String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
 		System.out.println("gRecaptchaResponse=" + gRecaptchaResponse);
         
@@ -65,13 +61,7 @@ public class EmployeeLoginServlet extends HttpServlet {
 				//// return;
 			}
 			else {
-				result = select.executeQuery(query2);
-				while (result.next())
-					customerID = result.getInt("id");
 				connection.close();
-				session.setAttribute("user", email);
-				session.setAttribute("pw", password);
-				session.setAttribute("customer", customerID);
 				response.sendRedirect("_dash_index.jsp");
 
 			}
