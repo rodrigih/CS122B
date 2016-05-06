@@ -20,7 +20,7 @@ public class InsertXMLData
     }
     
     public static void insertMovies(HashMap<String,Movie> idToMovie, 
-            HashMap<String,Integer movieCache)
+            HashMap<String,Integer> movieCache)
     {
         HashMap<Integer,ArrayList<Integer>> genreIDToMovieID = new HashMap<Star,ArrayList<Integer>>();
         HashMap<String,Integer> genreCache = new HashMap<String,Integer>();

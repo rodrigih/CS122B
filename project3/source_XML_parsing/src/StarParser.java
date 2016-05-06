@@ -78,24 +78,11 @@ public class StarParser extends DefaultHandler
                 currentStar.setDOB(buffer);
                 break;
             case "actor":
-                nameToStar.put(currentStar.getFullName(),currentStar); 
+                if(!(nameToStar.containsKey(currentStar.getFullName())))
+                    nameToStar.put(currentStar.getFullName(),currentStar); 
             default:
                 // DO NOTHING
                 break;
-        }
-    }
-
-    public static void main(String[] args)
-    {
-        StarParser sp = new StarParser();
-        CastParser cp = new CastParser();
-        HashMap<String,Star> stars = sp.parseDocument(args[0]);
-
-        stars = cp.parseDocument(args[1],stars);
-
-        for(Star s: stars.values())
-        {
-            System.out.println(s);
         }
     }
 }

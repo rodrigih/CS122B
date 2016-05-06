@@ -1,6 +1,5 @@
 package com.khcart;
 
-/* A servlet to display the contents of the MySQL movieDB database */
 import Model.DBConnection;
 import java.io.*;
 import java.sql.*;
@@ -12,19 +11,15 @@ import javax.servlet.http.*;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 
-//import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//@WebServlet("/LoginReCaptcha")
-public class LoginReCaptcha extends HttpServlet {
-	/**
-	 * 
-	 */
+public class EmployeeLoginServlet extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 
-	public LoginReCaptcha() {
+	public EmployeeLoginServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -44,12 +39,16 @@ public class LoginReCaptcha extends HttpServlet {
 
 		String email = request.getParameter("username");
 		String password = request.getParameter("password");
-		String query = "Select * FROM customers WHERE " + "email = '" + email + "' AND password = '" + password + "'";
+		String query = "SELECT * FROM employees WHERE " + 
+            "email = '" + email + "' AND password = '" + password + "';";
 
-		String query2 = "Select id FROM customers WHERE " + "email = '" + email + "' AND password = '" + password + "'";
+		String query2 = "SELECT id FROM employees WHERE " + 
+            "email = '" + email + "' AND password = '" + password + "';";
+
 		int customerID = 0;
 		String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
 		System.out.println("gRecaptchaResponse=" + gRecaptchaResponse);
+        
 		// Verify CAPTCHA.
 		boolean valid = VerifyUtils.verify(gRecaptchaResponse);
 		Connection connection = DBConnection.connectToDatabase();
@@ -58,24 +57,13 @@ public class LoginReCaptcha extends HttpServlet {
 			Statement select = connection.createStatement();
 			result = select.executeQuery(query);
 			if (!result.first() || !valid) {
-				RequestDispatcher rd = request.getRequestDispatcher("/LoginPage.jsp");
-				// PrintWriter out = response.getWriter();
+				RequestDispatcher rd = request.getRequestDispatcher("_dashboard.html");
 				connection.close();
 				out.println("<font color=blue>Invalid Login information or ReCaptcha Wrong!" + " Please try again!</font>");
 				rd.forward(request, response);
 				return;
 				//// return;
 			}
-			// if (!valid) {
-			// RequestDispatcher rd =
-			// getServletContext().getRequestDispatcher("/LoginPage.html");
-			// // errorString = "Captcha invalid!";
-			// out.println("<HTML>" + "<HEAD><TITLE>" + "Login: Error" +
-			// "</TITLE></HEAD>\n<BODY>"
-			// + "<P>Recaptcha WRONG!!!! </P></BODY></HTML>");
-			// rd.include(request, response);
-			// return;
-			// }
 			else {
 				result = select.executeQuery(query2);
 				while (result.next())
@@ -84,31 +72,13 @@ public class LoginReCaptcha extends HttpServlet {
 				session.setAttribute("user", email);
 				session.setAttribute("pw", password);
 				session.setAttribute("customer", customerID);
-				response.sendRedirect("index.jsp");
+				response.sendRedirect("_dash_index.jsp");
 
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-//		session.setAttribute("user", email);
-//		session.setAttribute("pw", password);
-//		session.setAttribute("customer", customerID);
-		// setting session to expiry in 30 mins
-		// session.setMaxInactiveInterval(60);
-		// Cookie userName = new Cookie("user", email);
-		// userName.setMaxAge(60);
-		// response.addCookie(userName);
-
-		// String gRecaptchaResponse =
-		// request.getParameter("g-recaptcha-response");
-		// System.out.println("gRecaptchaResponse=" + gRecaptchaResponse);
-		// // Verify CAPTCHA.
-		// boolean valid = VerifyUtils.verify(gRecaptchaResponse);
-
 		out.close();
-//		response.sendRedirect("index.html");
 
 	}
 }

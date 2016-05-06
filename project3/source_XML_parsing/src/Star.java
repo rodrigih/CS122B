@@ -67,6 +67,12 @@ public class Star
     public void setName(String name)
     {
         // Split name 
+        if(name.indexOf(' ') == -1)
+        {
+            setFirstName(name);
+            setLastName("");
+            return;
+        }
         String first = name.substring(0,name.indexOf(' ')); 
         String last = name.substring(name.indexOf(' ')+1);
 

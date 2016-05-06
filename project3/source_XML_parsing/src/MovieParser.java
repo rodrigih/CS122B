@@ -12,14 +12,14 @@ import org.xml.sax.helpers.DefaultHandler;
 
 public class MovieParser extends DefaultHandler
 {
-    private HashMap<String,Movie> movieToId; 
+    private HashMap<String,Movie> idToMovie; 
     private String buffer;
     private Movie currentMovie;
 
     // Constructor
     public MovieParser()
     {
-        movieToId = new HashMap<String,Movie>(); 
+        idToMovie = new HashMap<String,Movie>(); 
         buffer = "";
     }
 
@@ -44,7 +44,7 @@ public class MovieParser extends DefaultHandler
             ie.printStackTrace(); 
         }
 
-        return movieToId;
+        return idToMovie;
     }
 
     // Event Handlers
@@ -86,7 +86,8 @@ public class MovieParser extends DefaultHandler
                 currentMovie.addGenre(buffer);
                 break;
             case "film":
-                movieToId.put(currentMovie.getId(),currentMovie);
+                if(!(idToMovie.containsKey(currentMovie.getId())))
+                    idToMovie.put(currentMovie.getId(),currentMovie);
                 break;
             
             default:
