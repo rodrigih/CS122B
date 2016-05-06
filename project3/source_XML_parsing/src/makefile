@@ -5,7 +5,7 @@ SOURCES = \
 		  CastParser.java \
 		  StarParser.java \
 		  InsertXMLData.java
-LIB = ".:../lib/"
+LIB = ".:../lib/mysql-connector-java-5.1.28.jar"
 
 default: all
 
