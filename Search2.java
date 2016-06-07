@@ -1,29 +1,40 @@
+package Model;
+
 import java.sql.*;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Search2 {
-	static Connection connection = DBConnection.connectToDatabase();
+public class Search {
 
 
 	public static ArrayList<Movie> createList(String keywords) {
 		ArrayList<Movie> movies = new ArrayList<Movie>();
 		Set<Movie> movieSet = new HashSet<Movie>();
+	    Connection connection = DBConnection.connectToDatabase();
+        
+        long startTime = System.nanoTime();  
+
 		try {
-			for (Movie movie : getMoviesByStars(keywords)) {
+			for (Movie movie : getMoviesByStars(keywords,connection)) {
 				movieSet.add(movie);
 			}
-			for (Movie movie : getMoviesByGenre(keywords)) {
+			for (Movie movie : getMoviesByGenre(keywords,connection)) {
 				movieSet.add(movie);
 			}
-			for (Movie movie : getMoviesByKey(keywords)) {
+			for (Movie movie : getMoviesByKey(keywords,connection)) {
 				movieSet.add(movie);
 			}
 			for (Movie movie : movieSet) {
 				movies.add(movie);
 			}
+
+            long endTime = System.nanoTime();  
+            long elapsedTime = endTime - startTime; 
+
+            System.out.println("Elapsed Time = " + elapsedTime);
+
 			connection.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -31,7 +42,7 @@ public class Search2 {
 		return movies;
 	}
 
-	private static ArrayList<Movie> getMoviesByStars(String keyword) throws SQLException {
+	private static ArrayList<Movie> getMoviesByStars(String keyword,Connection connection) throws SQLException {
 		String[] splitKeyword = keyword.split(" ");
 		ResultSet result;
 		ArrayList<Movie> movieList = new ArrayList<Movie>();
@@ -80,7 +91,7 @@ public class Search2 {
 		return movieList;
 	}
 
-	private static ArrayList<Movie> getMoviesByGenre(String keyword) throws SQLException {
+	private static ArrayList<Movie> getMoviesByGenre(String keyword,Connection connection) throws SQLException {
 		ResultSet result;
 		ArrayList<Movie> movieList = new ArrayList<Movie>();
 
@@ -106,7 +117,7 @@ public class Search2 {
 		return movieList;
 	}
 
-	private static ArrayList<Movie> getMoviesByKey(String keyword) throws SQLException {
+	private static ArrayList<Movie> getMoviesByKey(String keyword,Connection connection) throws SQLException {
 		ResultSet result;
 		ArrayList<Movie> movieList = new ArrayList<Movie>();
 

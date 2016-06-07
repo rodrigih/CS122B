@@ -1,5 +1,3 @@
-package khtest;
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
@@ -12,14 +10,14 @@ import javax.servlet.http.HttpSession;
 
 import Model.*;
 
-public class AdvSearchServlet2 extends HttpServlet {
+public class AdvSearchServlet extends HttpServlet {
 	// process
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public AdvSearchServlet2() {
+	public AdvSearchServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -51,7 +49,7 @@ public class AdvSearchServlet2 extends HttpServlet {
 				+ "WHERE a.star_id = b.id AND ";
 
 		try {
-			Connection connection = DBConnection.connectToDatabase();
+			Connection connection = Model.DBConnection.connectToDatabase();
 			PreparedStatement selectMovie;
 
 			String[] splitNames = name.split(" ");
