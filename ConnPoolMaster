@@ -1,0 +1,2044 @@
+Jun 06, 2016 5:36:30 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:36:30 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:36:30 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:36:30 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:36:30 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:36:30 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:36:31 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:36:31 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 902 ms
+Jun 06, 2016 5:36:31 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jun 06, 2016 5:36:31 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.52 (Ubuntu)
+Jun 06, 2016 5:36:31 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /var/lib/tomcat7/webapps/ROOT
+Warning: default mime table not found: /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/content-types.properties
+Jun 06, 2016 5:36:38 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [5,011] milliseconds.
+Jun 06, 2016 5:36:38 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:36:38 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 7123 ms
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/examples.xml
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core_rt is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/core is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt_rt is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/fmt is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/functions is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/permittedTaglibs is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/scriptfree is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql_rt is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/sql is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml_rt is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/xml is already defined
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/manager.xml
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/docs.xml
+Jun 06, 2016 5:39:08 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/host-manager.xml
+Jun 06, 2016 5:41:42 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:41:42 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jun 06, 2016 5:41:42 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [SeedGenerator Thread] but has failed to stop it. This is very likely to create a memory leak.
+Jun 06, 2016 5:41:42 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:41:42 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:41:43 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:41:43 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:41:43 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:41:43 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:41:43 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:41:43 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:41:44 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:41:44 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 907 ms
+Jun 06, 2016 5:41:44 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jun 06, 2016 5:41:44 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.52 (Ubuntu)
+Jun 06, 2016 5:41:44 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/examples.xml
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core_rt is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/core is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt_rt is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/fmt is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/functions is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/permittedTaglibs is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/scriptfree is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql_rt is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/sql is already defined
+Jun 06, 2016 5:41:45 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml_rt is already defined
+Jun 06, 2016 5:41:46 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml is already defined
+Jun 06, 2016 5:41:46 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/xml is already defined
+Jun 06, 2016 5:41:46 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/manager.xml
+Jun 06, 2016 5:41:46 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/docs.xml
+Jun 06, 2016 5:41:46 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/host-manager.xml
+Jun 06, 2016 5:41:46 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /var/lib/tomcat7/webapps/ROOT
+Jun 06, 2016 5:41:47 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:41:47 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2591 ms
+Jun 06, 2016 5:43:07 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/tomcat7/webapps/fabflix.war
+Jun 06, 2016 5:43:07 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 06, 2016 5:43:07 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 38,661,880 milliseconds ago.  The last packet sent successfully to the server was 38,661,880 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1129)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3988)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2598)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2768)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1651)
+	at Model.Search.getMoviesByStars(Search.java:51)
+	at Model.Search.createList(Search.java:20)
+	at Model.MovieList.<init>(MovieList.java:35)
+	at getMovies.doGet(getMovies.java:150)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3969)
+	... 27 more
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:989)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:975)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:920)
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1311)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1303)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2665)
+	at Model.Search.getMoviesByStars(Search.java:44)
+	at Model.Search.createList(Search.java:20)
+	at Model.MovieList.<init>(MovieList.java:35)
+	at getMovies.doGet(getMovies.java:150)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:313)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 38,661,880 milliseconds ago.  The last packet sent successfully to the server was 38,661,880 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1129)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3988)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2598)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2819)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2768)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1651)
+	at Model.Search.getMoviesByStars(Search.java:51)
+	at Model.Search.createList(Search.java:20)
+	at Model.MovieList.<init>(MovieList.java:35)
+	at getMovies.doGet(getMovies.java:150)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	... 3 more
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3969)
+	... 27 more
+Jun 06, 2016 5:48:02 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:48:02 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jun 06, 2016 5:48:02 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/fabflix] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Jun 06, 2016 5:48:02 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/fabflix] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Jun 06, 2016 5:48:02 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:48:02 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:48:04 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:48:04 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:48:04 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:48:04 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:48:04 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:48:04 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared], exists: [false], isDirectory: [false], canRead: [false]
+Jun 06, 2016 5:48:05 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:48:05 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 915 ms
+Jun 06, 2016 5:48:05 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jun 06, 2016 5:48:05 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.52 (Ubuntu)
+Jun 06, 2016 5:48:05 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/examples.xml
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core_rt is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/core is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt_rt is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/fmt is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/functions is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/permittedTaglibs is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/scriptfree is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql_rt is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/sql is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml_rt is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/xml is already defined
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/manager.xml
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/docs.xml
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/host-manager.xml
+Jun 06, 2016 5:48:06 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/tomcat7/webapps/fabflix.war
+Jun 06, 2016 5:48:06 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 06, 2016 5:48:06 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 06, 2016 5:48:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /var/lib/tomcat7/webapps/ROOT
+Jun 06, 2016 5:48:08 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jun 06, 2016 5:48:08 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3756 ms
+Jun 06, 2016 9:33:10 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/fabflix]
+Jun 06, 2016 9:33:10 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/fabflix] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Jun 06, 2016 9:33:10 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/fabflix] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Jun 06, 2016 9:33:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/tomcat7/webapps/fabflix.war
+Jun 06, 2016 9:33:20 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 06, 2016 9:33:20 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 06, 2016 11:34:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/tomcat7/webapps/TomcatTest.war
+Jun 06, 2016 11:34:21 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/TomcatTest/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 06, 2016 11:38:58 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/TomcatTest] has started
+Jun 06, 2016 11:38:58 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/TomcatTest/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 06, 2016 11:38:58 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/TomcatTest] is completed
+HELOO WORLD
+Jun 07, 2016 12:21:24 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 12:21:24 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jun 07, 2016 12:21:24 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/fabflix] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Jun 07, 2016 12:21:24 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/TomcatTest] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Jun 07, 2016 12:21:24 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/TomcatTest] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+Jun 07, 2016 12:21:24 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 12:21:24 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 12:21:25 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:21:25 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:21:25 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:21:25 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:21:25 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:21:25 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:21:26 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 12:21:26 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 904 ms
+Jun 07, 2016 12:21:26 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jun 07, 2016 12:21:26 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.52 (Ubuntu)
+Jun 07, 2016 12:21:26 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/examples.xml
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core_rt is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/core is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt_rt is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/fmt is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/functions is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/permittedTaglibs is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/scriptfree is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql_rt is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/sql is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml_rt is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/xml is already defined
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/manager.xml
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/docs.xml
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/host-manager.xml
+Jun 07, 2016 12:21:27 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/tomcat7/webapps/TomcatTest.war
+Jun 07, 2016 12:21:27 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/TomcatTest/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:21:29 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/tomcat7/webapps/fabflix.war
+Jun 07, 2016 12:21:29 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:21:29 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:21:29 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /var/lib/tomcat7/webapps/ROOT
+Jun 07, 2016 12:21:30 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 12:21:30 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4025 ms
+HELOO WORLD
+Jun 07, 2016 12:42:45 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] has started
+Jun 07, 2016 12:42:45 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/fabflix] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Jun 07, 2016 12:42:45 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:42:45 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:42:46 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] is completed
+Jun 07, 2016 12:44:45 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] has started
+Jun 07, 2016 12:44:45 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/fabflix] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Jun 07, 2016 12:44:45 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:44:45 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:44:45 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] is completed
+Jun 07, 2016 12:44:47 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] has started
+Jun 07, 2016 12:44:47 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/fabflix] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Jun 07, 2016 12:44:48 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:44:48 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:44:48 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] is completed
+javax.naming.NameNotFoundException: Name [jdbc/moviedb] is not bound in this Context. Unable to find [jdbc].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:819)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:167)
+	at org.apache.naming.factory.ResourceLinkFactory.getObjectInstance(ResourceLinkFactory.java:92)
+	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:321)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:842)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:153)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:830)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:167)
+	at Model.DBConnection.connectToDatabase(DBConnection.java:20)
+	at Model.Search.createList(Search.java:14)
+	at Model.MovieList.<init>(MovieList.java:35)
+	at getMovies.doGet(getMovies.java:149)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Jun 07, 2016 12:59:00 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 12:59:00 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jun 07, 2016 12:59:01 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/fabflix] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Jun 07, 2016 12:59:01 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/TomcatTest] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Jun 07, 2016 12:59:01 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/TomcatTest] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+Jun 07, 2016 12:59:01 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 12:59:01 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 12:59:02 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:59:02 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:59:02 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:59:02 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:59:02 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:59:02 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 12:59:03 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 12:59:04 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1095 ms
+Jun 07, 2016 12:59:04 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jun 07, 2016 12:59:04 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.52 (Ubuntu)
+Jun 07, 2016 12:59:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/examples.xml
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core_rt is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/core is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt_rt is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/fmt is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/functions is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/permittedTaglibs is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/scriptfree is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql_rt is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/sql is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml_rt is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/xml is already defined
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/manager.xml
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/docs.xml
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/host-manager.xml
+Jun 07, 2016 12:59:05 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/tomcat7/webapps/TomcatTest.war
+Jun 07, 2016 12:59:05 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/TomcatTest/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:59:07 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/tomcat7/webapps/fabflix.war
+Jun 07, 2016 12:59:07 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:59:07 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 12:59:07 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /var/lib/tomcat7/webapps/ROOT
+Jun 07, 2016 12:59:08 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 12:59:08 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4369 ms
+Jun 07, 2016 1:01:04 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] has started
+Jun 07, 2016 1:01:05 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 1:01:05 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 1:01:06 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] is completed
+Jun 07, 2016 1:01:30 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] has started
+Jun 07, 2016 1:01:30 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 1:01:30 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 1:01:30 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] is completed
+Jun 07, 2016 1:01:32 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] has started
+Jun 07, 2016 1:01:33 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 1:01:33 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 1:01:33 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] is completed
+Jun 07, 2016 1:07:40 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 1:07:40 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jun 07, 2016 1:07:40 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 1:07:40 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 1:07:41 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 1:07:41 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/common], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 1:07:42 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 1:07:42 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/server], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 1:07:42 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared/classes], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 1:07:42 AM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [/usr/share/tomcat7/shared], exists: [false], isDirectory: [false], canRead: [false]
+Jun 07, 2016 1:07:43 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 966 ms
+Jun 07, 2016 1:07:43 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jun 07, 2016 1:07:43 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.52 (Ubuntu)
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/examples.xml
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core_rt is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/core is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt_rt is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/fmt is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/functions is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/permittedTaglibs is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://jakarta.apache.org/taglibs/standard/scriptfree is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql_rt is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/sql is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml_rt is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jsp/jstl/xml is already defined
+Jun 07, 2016 1:07:43 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/manager.xml
+Jun 07, 2016 1:07:44 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/docs.xml
+Jun 07, 2016 1:07:44 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /etc/tomcat7/Catalina/localhost/host-manager.xml
+Jun 07, 2016 1:07:44 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/tomcat7/webapps/TomcatTest.war
+Jun 07, 2016 1:07:44 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/TomcatTest/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 1:07:45 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /var/lib/tomcat7/webapps/fabflix.war
+Jun 07, 2016 1:07:45 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 1:07:45 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 1:07:46 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /var/lib/tomcat7/webapps/ROOT
+Jun 07, 2016 1:07:46 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jun 07, 2016 1:07:46 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3800 ms
+Jun 07, 2016 1:08:47 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] has started
+Jun 07, 2016 1:08:48 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/javax.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 1:08:48 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/var/lib/tomcat7/webapps/fabflix/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Jun 07, 2016 1:08:49 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/fabflix] is completed
+Elapsed Time = 164782451
+Elapsed Time = 100111660
+HELOO WORLD
+Elapsed Time = 192197505
+Elapsed Time = 16301810
+Elapsed Time = 13627746
+Elapsed Time = 164952753
+Elapsed Time = 317929812
+Elapsed Time = 24123128
+Elapsed Time = 14699047
+Elapsed Time = 12826258
+Elapsed Time = 7371789
+Elapsed Time = 14195562
+Elapsed Time = 11675741
+Elapsed Time = 100434200
+Elapsed Time = 10982916
+Elapsed Time = 11062875
+Elapsed Time = 9399102
+Elapsed Time = 27895660
+Elapsed Time = 10501669
+Elapsed Time = 128648272
+Elapsed Time = 12880767
+Elapsed Time = 60881444
+Elapsed Time = 7031361
+Elapsed Time = 6615025
+Elapsed Time = 16702335
+Elapsed Time = 9907154
+Elapsed Time = 67511152
+Elapsed Time = 16965282
+Elapsed Time = 9744015
+Elapsed Time = 9567347
+Elapsed Time = 28470324
+Elapsed Time = 11639845
+Elapsed Time = 11123280
+Elapsed Time = 31401179
+Elapsed Time = 13440043
+Elapsed Time = 6640346
+Elapsed Time = 12100065
+Elapsed Time = 22673452
+Elapsed Time = 9464276
+Elapsed Time = 7099713
+Elapsed Time = 21261122
+Elapsed Time = 24477273
+Elapsed Time = 6522258
+Elapsed Time = 1805335738
+Elapsed Time = 5867939
+Elapsed Time = 433109042
+Elapsed Time = 203901623
+Elapsed Time = 5668865
+Elapsed Time = 20304472
+Elapsed Time = 34889207
+Elapsed Time = 8806254
+Elapsed Time = 6198194
+Elapsed Time = 25573500
+Elapsed Time = 10267726
+Elapsed Time = 11229787
+Elapsed Time = 5806722
+Elapsed Time = 89689581
+Elapsed Time = 106745394
+Elapsed Time = 5712880
+Elapsed Time = 12901138
+Elapsed Time = 63413416
+Elapsed Time = 450929339
+Elapsed Time = 5451071
+Elapsed Time = 29627554
+Elapsed Time = 36446753
+Elapsed Time = 6040492
+Elapsed Time = 6332485
+Elapsed Time = 5677800
+Elapsed Time = 59068593
+Elapsed Time = 122321079
+Elapsed Time = 5356948
+Elapsed Time = 5460100
+Elapsed Time = 5403827
+Elapsed Time = 6046708
+Elapsed Time = 7881375
+Elapsed Time = 11157964
+Elapsed Time = 5590723
+Elapsed Time = 10920485
+Elapsed Time = 5478387
+Elapsed Time = 44444388
+Elapsed Time = 5524621
+Elapsed Time = 11975193
+Elapsed Time = 1207179541
+Elapsed Time = 64412504
+Elapsed Time = 10352527
+Elapsed Time = 6027317
+Elapsed Time = 5959911
+Elapsed Time = 215780385
+Elapsed Time = 142255070
+Elapsed Time = 9019748
+Elapsed Time = 157893352
+Elapsed Time = 5531684
+Elapsed Time = 5385286
+Elapsed Time = 5313060
+Elapsed Time = 9400009
+Elapsed Time = 5187877
+Elapsed Time = 10428021
+Elapsed Time = 5291220
+Elapsed Time = 11252643
+Elapsed Time = 5416754
+Elapsed Time = 6754677
+Elapsed Time = 107420440
+Elapsed Time = 48594463
+Elapsed Time = 101369686
+Elapsed Time = 10737606
+Elapsed Time = 43686608
+Elapsed Time = 42984589
+Elapsed Time = 43356310
+Elapsed Time = 5586591
+Elapsed Time = 5325563
+Elapsed Time = 5479881
+Elapsed Time = 152995
+Elapsed Time = 21759790
+Elapsed Time = 7517836
+Elapsed Time = 10554307
+Elapsed Time = 5417674
+Elapsed Time = 6252472
+Elapsed Time = 10828730
+Elapsed Time = 9607242
+Elapsed Time = 9357565
+Elapsed Time = 5553207
+Elapsed Time = 50287153
+Elapsed Time = 10515916
+Elapsed Time = 5199426
+Elapsed Time = 9643296
+Elapsed Time = 87200089
+Elapsed Time = 8881608
+Elapsed Time = 6631635
+Elapsed Time = 5247055
+Elapsed Time = 5301889
+Elapsed Time = 10162550
+Elapsed Time = 10414103
+Elapsed Time = 10412432
+Elapsed Time = 5335738
+Elapsed Time = 42334828
+Elapsed Time = 5484867
+Elapsed Time = 10295155
+Elapsed Time = 16356230
+Elapsed Time = 5359183
+Elapsed Time = 151984064
+Elapsed Time = 5299248
+Elapsed Time = 42533577
+Elapsed Time = 10353702
+Elapsed Time = 1010820049
+Elapsed Time = 15734752
+Elapsed Time = 149834091
+Elapsed Time = 5492694
+Elapsed Time = 15562885
+Elapsed Time = 5434332
+Elapsed Time = 5362720
+Elapsed Time = 10307154
+Elapsed Time = 142002870
+Elapsed Time = 5245118
+Elapsed Time = 5195149
+Elapsed Time = 5219692
+Elapsed Time = 85004203
+Elapsed Time = 5365174
+Elapsed Time = 15697622
+Elapsed Time = 5588978
+Elapsed Time = 43120080
+Elapsed Time = 93413977
+Elapsed Time = 5375561
+Elapsed Time = 5302800
+Elapsed Time = 5655304
+Elapsed Time = 36990569
+Elapsed Time = 5396197
+Elapsed Time = 5305196
+Elapsed Time = 5385952
+Elapsed Time = 5344959
+Elapsed Time = 5219867
+Elapsed Time = 5313292
+Elapsed Time = 5396225
+Elapsed Time = 42749029
+Elapsed Time = 120702687
+Elapsed Time = 5840399
+Elapsed Time = 10536731
+Elapsed Time = 5310208
+Elapsed Time = 10585222
+Elapsed Time = 1094933058
+Elapsed Time = 5382590
+Elapsed Time = 26157152
+Elapsed Time = 5162716
+Elapsed Time = 5338048
+Elapsed Time = 10395718
+Elapsed Time = 10381174
+Elapsed Time = 42199577
+Elapsed Time = 10580265
+Elapsed Time = 70898963
+Elapsed Time = 5259948
+Elapsed Time = 5493742
+Elapsed Time = 5126142
+Elapsed Time = 35632036
+Elapsed Time = 5077347
+Elapsed Time = 5457800
+Elapsed Time = 5606321
+Elapsed Time = 5449930
+Elapsed Time = 5322198
+Elapsed Time = 73501096
+Elapsed Time = 5285213
+Elapsed Time = 5418207
+Elapsed Time = 25719000
+Elapsed Time = 53192498
+Elapsed Time = 5236174
+Elapsed Time = 5153729
+Elapsed Time = 5439583
+Elapsed Time = 5291420
+Elapsed Time = 5353842
+Elapsed Time = 5414397
+Elapsed Time = 322331074
+Elapsed Time = 5465936
+Elapsed Time = 5286041
+Elapsed Time = 5357693
+Elapsed Time = 5692999
+Elapsed Time = 10520512
+Elapsed Time = 5733393
+Elapsed Time = 10488699
+Elapsed Time = 38566762
+Elapsed Time = 122615778
+Elapsed Time = 5763256
+Elapsed Time = 15516779
+Elapsed Time = 5054613
+Elapsed Time = 5317969
+Elapsed Time = 41582928
+Elapsed Time = 15360818
+Elapsed Time = 5287714
+Elapsed Time = 42539325
+Elapsed Time = 75782309
+Elapsed Time = 73864977
+Elapsed Time = 10289923
+Elapsed Time = 5298262
+Elapsed Time = 15350560
+Elapsed Time = 7104738
+Elapsed Time = 10244926
+Elapsed Time = 5267240
+Elapsed Time = 5559881
+Elapsed Time = 15809395
+Elapsed Time = 5152567
+Elapsed Time = 5424778
+Elapsed Time = 6751562
+Elapsed Time = 5165056
+Elapsed Time = 5795665
+Elapsed Time = 5208779
+Elapsed Time = 1277713368
+Elapsed Time = 19115884
+Elapsed Time = 343967423
+Elapsed Time = 43532992
+Elapsed Time = 5442919
+Elapsed Time = 6280517
+Elapsed Time = 5356793
+Elapsed Time = 10799116
+Elapsed Time = 5374923
+Elapsed Time = 18189948
+Elapsed Time = 42116062
+Elapsed Time = 5180444
+Elapsed Time = 6907389
+Elapsed Time = 14794559
+Elapsed Time = 123085810
+Elapsed Time = 5928691
+Elapsed Time = 19233900
+Elapsed Time = 27534491
+Elapsed Time = 5334004
+Elapsed Time = 7910149
+Elapsed Time = 95283373
+Elapsed Time = 71618627
+Elapsed Time = 5108613
+Elapsed Time = 5246509
+Elapsed Time = 5312527
+Elapsed Time = 5711782
+Elapsed Time = 15693082
+Elapsed Time = 28407669
+Elapsed Time = 248834406
+Elapsed Time = 5181382
+Elapsed Time = 8371446
+Elapsed Time = 8214094
+Elapsed Time = 8188285
+Elapsed Time = 5499932
+Elapsed Time = 5160899
+Elapsed Time = 7984493
+Elapsed Time = 68291698
+Elapsed Time = 1057446427
+Elapsed Time = 13340477
+Elapsed Time = 5296077
+Elapsed Time = 7900683
+Elapsed Time = 5204441
+Elapsed Time = 76149786
+Elapsed Time = 5106934
+Elapsed Time = 71436686
+Elapsed Time = 102032363
+Elapsed Time = 8135640
+Elapsed Time = 5441469
+Elapsed Time = 5384515
+Elapsed Time = 81200225
+Elapsed Time = 5418478
+Elapsed Time = 6101693
+Elapsed Time = 1000785549
+Elapsed Time = 5377795
+Elapsed Time = 5145257
+Elapsed Time = 8381307
+Elapsed Time = 30451411
+Elapsed Time = 181327799
+Elapsed Time = 7952345
+Elapsed Time = 9961510
+Elapsed Time = 9921411
+Elapsed Time = 5070239
+Elapsed Time = 5110764
+Elapsed Time = 5103219
+Elapsed Time = 5350277
+Elapsed Time = 5185804
+Elapsed Time = 7620484
+Elapsed Time = 7699034
+Elapsed Time = 5275900
+Elapsed Time = 5140292
+Elapsed Time = 7541045
+Elapsed Time = 7259891
+Elapsed Time = 5022338
+Elapsed Time = 5029177
+Elapsed Time = 5241880
+Elapsed Time = 5197346
+Elapsed Time = 41339921
+Elapsed Time = 115541558
+Elapsed Time = 27341443
+Elapsed Time = 11325314
+Elapsed Time = 5223178
+Elapsed Time = 44997708
+Elapsed Time = 5411312
+Elapsed Time = 43209886
+Elapsed Time = 9888502
+Elapsed Time = 5231118
+Elapsed Time = 10326962
+Elapsed Time = 107644391
+Elapsed Time = 1136608480
+Elapsed Time = 10042640
+Elapsed Time = 5045114
+Elapsed Time = 14500854
+Elapsed Time = 41553130
+Elapsed Time = 5226940
+Elapsed Time = 5158158
+Elapsed Time = 1000095092
+Elapsed Time = 5059682
+Elapsed Time = 27287072
+Elapsed Time = 5205917
+Elapsed Time = 19379478
+Elapsed Time = 7883719
+Elapsed Time = 5335505
+Elapsed Time = 5030922
+Elapsed Time = 66848453
+Elapsed Time = 5096520
+Elapsed Time = 4980445
+Elapsed Time = 7691071
+Elapsed Time = 5367828
+Elapsed Time = 6675775
+Elapsed Time = 5332208
+Elapsed Time = 70219839
+Elapsed Time = 1125258736
+Elapsed Time = 10143441
+Elapsed Time = 10010810
+Elapsed Time = 9948644
+Elapsed Time = 40502432
+Elapsed Time = 8020267
+Elapsed Time = 81724603
+Elapsed Time = 9986750
+Elapsed Time = 5252254
+Elapsed Time = 40468066
+Elapsed Time = 4883615
+Elapsed Time = 184615624
+Elapsed Time = 8252557
+Elapsed Time = 40631223
+Elapsed Time = 29692278
+Elapsed Time = 9956594
+Elapsed Time = 5314886
+Elapsed Time = 5196344
+Elapsed Time = 5244476
+Elapsed Time = 41386400
+Elapsed Time = 7821384
+Elapsed Time = 6916335
+Elapsed Time = 5649668
+Elapsed Time = 5609629
+Elapsed Time = 10346685
+Elapsed Time = 72168469
+Elapsed Time = 26419484
+Elapsed Time = 207638718
+Elapsed Time = 5079685
+Elapsed Time = 4967234
+Elapsed Time = 9395395
+Elapsed Time = 5846554
+Elapsed Time = 7400708
+Elapsed Time = 39526043
+Elapsed Time = 79214864
+Elapsed Time = 7837314
+Elapsed Time = 5042640
+Elapsed Time = 5028807
+Elapsed Time = 24486994
+Elapsed Time = 987650155
+Elapsed Time = 9669008
+Elapsed Time = 4889182
+Elapsed Time = 39755815
+Elapsed Time = 194155538
+Elapsed Time = 9592318
+Elapsed Time = 14609939
+Elapsed Time = 121991
+Elapsed Time = 4952317
+Elapsed Time = 10183224
+Elapsed Time = 5152681
+Elapsed Time = 5122808
+Elapsed Time = 5126559
+Elapsed Time = 5173742
+Elapsed Time = 5102402
+Elapsed Time = 5192419
+Elapsed Time = 5071621
+Elapsed Time = 14796417
+Elapsed Time = 9871266
+Elapsed Time = 7750644
+Elapsed Time = 40711297
+Elapsed Time = 5409187
+Elapsed Time = 7638265
+Elapsed Time = 5003450
+Elapsed Time = 7618253
+Elapsed Time = 5010650
+Elapsed Time = 9942215
+Elapsed Time = 9802200
+Elapsed Time = 36811226
+Elapsed Time = 5036139
+Elapsed Time = 5099840
+Elapsed Time = 5312217
+Elapsed Time = 5285941
+Elapsed Time = 857621621
+Elapsed Time = 5014876
+Elapsed Time = 5082031
+Elapsed Time = 41055401
+Elapsed Time = 44036673
+Elapsed Time = 5389468
+Elapsed Time = 5165417
+Elapsed Time = 80038522
+Elapsed Time = 14417308
+Elapsed Time = 9844928
+Elapsed Time = 9872125
+Elapsed Time = 10443882
+Elapsed Time = 7744756
+Elapsed Time = 110098578
+Elapsed Time = 5438765
+Elapsed Time = 9767140
+Elapsed Time = 60096604
+Elapsed Time = 5161952
+Elapsed Time = 5096312
+Elapsed Time = 4981105
+Elapsed Time = 44444895
+Elapsed Time = 4926566
+Elapsed Time = 36642690
+Elapsed Time = 5271104
+Elapsed Time = 10267963
+Elapsed Time = 1004445923
+Elapsed Time = 34096311
+Elapsed Time = 4987118
+Elapsed Time = 14965571
+Elapsed Time = 4970047
+Elapsed Time = 5326506
+Elapsed Time = 29838805
+Elapsed Time = 9982504
+Elapsed Time = 5281404
+Elapsed Time = 40524855
+Elapsed Time = 4909441
+Elapsed Time = 4929710
+Elapsed Time = 5265025
+Elapsed Time = 5066138
+Elapsed Time = 5271208
+Elapsed Time = 5229236
+Elapsed Time = 5049656
+Elapsed Time = 5386749
+Elapsed Time = 5489718
+Elapsed Time = 67684830
+Elapsed Time = 5051436
+Elapsed Time = 5070456
+Elapsed Time = 5356474
+Elapsed Time = 5217143
+Elapsed Time = 5416098
+Elapsed Time = 29884195
+Elapsed Time = 4925043
+Elapsed Time = 5016608
+Elapsed Time = 9796969
+Elapsed Time = 14565427
+Elapsed Time = 9889189
+Elapsed Time = 9651051
+Elapsed Time = 5286020
+Elapsed Time = 40624531
+Elapsed Time = 4888226
+Elapsed Time = 4970561
+Elapsed Time = 5200398
+Elapsed Time = 114343757
+Elapsed Time = 10004028
+Elapsed Time = 5072329
+Elapsed Time = 4848932
+Elapsed Time = 9969176
+Elapsed Time = 9821043
+Elapsed Time = 7383476
+Elapsed Time = 5056103
+Elapsed Time = 993657982
+Elapsed Time = 5004532
+Elapsed Time = 9720753
+Elapsed Time = 5281146
+Elapsed Time = 19824343
+Elapsed Time = 12196527
+Elapsed Time = 4979198
+Elapsed Time = 7904208
+Elapsed Time = 7618615
+Elapsed Time = 5275293
+Elapsed Time = 5272017
+Elapsed Time = 99899099
+Elapsed Time = 5199254
+Elapsed Time = 5431142
+Elapsed Time = 5058950
+Elapsed Time = 7431646
+Elapsed Time = 6468732
+Elapsed Time = 5120324
+Elapsed Time = 5026780
+Elapsed Time = 5291911
+Elapsed Time = 40624353
+Elapsed Time = 5037129
+Elapsed Time = 4934322
+Elapsed Time = 5128065
+Elapsed Time = 10000805
+Elapsed Time = 5161020
+Elapsed Time = 5059629
+Elapsed Time = 9866580
+Elapsed Time = 9873264
+Elapsed Time = 4920278
+Elapsed Time = 5137262
+Elapsed Time = 51056278
+Elapsed Time = 4996720
+Elapsed Time = 5052624
+Elapsed Time = 9856807
+Elapsed Time = 47751956
+Elapsed Time = 34404283
+Elapsed Time = 35333052
+Elapsed Time = 19828137
+Elapsed Time = 40715353
+Elapsed Time = 7819363
+Elapsed Time = 5082958
+Elapsed Time = 240288691
+Elapsed Time = 5326043
+Elapsed Time = 5341213
+Elapsed Time = 14683374
+Elapsed Time = 9904294
+Elapsed Time = 24259693
+Elapsed Time = 8047526
+Elapsed Time = 5226501
+Elapsed Time = 7772570
+Elapsed Time = 5138078
+Elapsed Time = 4970173
+Elapsed Time = 79021709
+Elapsed Time = 9772254
+Elapsed Time = 4841818
+Elapsed Time = 59517818
+Elapsed Time = 5157949
+Elapsed Time = 9844274
+Elapsed Time = 5006120
+Elapsed Time = 5010833
+Elapsed Time = 971366979
+Elapsed Time = 6749506
+Elapsed Time = 40100859
+Elapsed Time = 4978738
+Elapsed Time = 41829106
+Elapsed Time = 4925843
+Elapsed Time = 5057775
+Elapsed Time = 5129720
+Elapsed Time = 24812120
+Elapsed Time = 108222295
+Elapsed Time = 883210362
+Elapsed Time = 5179560
+Elapsed Time = 5121207
+Elapsed Time = 7589310
+Elapsed Time = 7634328
+Elapsed Time = 5167028
+Elapsed Time = 969182778
+Elapsed Time = 5075667
+Elapsed Time = 5265412
+Elapsed Time = 240348932
+Elapsed Time = 25203188
+Elapsed Time = 4918139
+Elapsed Time = 9868463
+Elapsed Time = 5308140
+Elapsed Time = 990870491
+Elapsed Time = 5056005
+Elapsed Time = 5084133
+Elapsed Time = 5144686
+Elapsed Time = 7722794
+Elapsed Time = 5041742
+Elapsed Time = 4910166
+Elapsed Time = 35018210
+Elapsed Time = 40485220
+Elapsed Time = 95265676
+Elapsed Time = 4908044
+Elapsed Time = 5055256
+Elapsed Time = 39174969
+Elapsed Time = 5081280
+Elapsed Time = 24505116
+Elapsed Time = 39807189
+Elapsed Time = 4993437
+Elapsed Time = 9873445
+Elapsed Time = 5112437
+Elapsed Time = 9891120
+Elapsed Time = 5456149
+Elapsed Time = 5029547
+Elapsed Time = 9887084
+Elapsed Time = 9937859
+Elapsed Time = 5018133
+Elapsed Time = 136862215
+Elapsed Time = 5080263
+Elapsed Time = 4920484
+Elapsed Time = 141491247
+Elapsed Time = 891863044
+Elapsed Time = 5161955
+Elapsed Time = 5082110
+Elapsed Time = 5001568
+Elapsed Time = 5001915
+Elapsed Time = 29249233
+Elapsed Time = 5308655
+Elapsed Time = 34481074
+Elapsed Time = 4977775
+Elapsed Time = 50485302
+Elapsed Time = 40526082
+Elapsed Time = 107832090
+Elapsed Time = 40745831
+Elapsed Time = 80390840
+Elapsed Time = 5314975
+Elapsed Time = 5165138
+Elapsed Time = 35137621
+Elapsed Time = 9961785
+Elapsed Time = 5036223
+Elapsed Time = 172022538
+Elapsed Time = 7277452
+Elapsed Time = 12584503
+Elapsed Time = 35417347
+Elapsed Time = 861795842
+Elapsed Time = 19989101
+Elapsed Time = 1045651227
+Elapsed Time = 9970071
+Elapsed Time = 24487863
+Elapsed Time = 5254557
+Elapsed Time = 4992550
+Elapsed Time = 10076873
+Elapsed Time = 203907862
+Elapsed Time = 5023147
+Elapsed Time = 70482086
+Elapsed Time = 5051697
+Elapsed Time = 4802652
+Elapsed Time = 4955839
+Elapsed Time = 5113267
+Elapsed Time = 12469765
+Elapsed Time = 138504934
+Elapsed Time = 4848247
+Elapsed Time = 5203295
+Elapsed Time = 5020904
+Elapsed Time = 68714432
+Elapsed Time = 10011955
+Elapsed Time = 25666396
+Elapsed Time = 5147087
+Elapsed Time = 9791778
+Elapsed Time = 10176810
+Elapsed Time = 4659149
+Elapsed Time = 29093948
+Elapsed Time = 58581699
+Elapsed Time = 4956740
+Elapsed Time = 4837922
+Elapsed Time = 5399155
+Elapsed Time = 5214896
+Elapsed Time = 4613382
+Elapsed Time = 5199885
+Elapsed Time = 4804657
+Elapsed Time = 4758000
+Elapsed Time = 4928582
+Elapsed Time = 5054182
+Elapsed Time = 186980612
+Elapsed Time = 5208183
+Elapsed Time = 40754684
+Elapsed Time = 66046092
+Elapsed Time = 4990320
+Elapsed Time = 4880864
+Elapsed Time = 50539314
+Elapsed Time = 100461943
+Elapsed Time = 5016705
+Elapsed Time = 4799448
+Elapsed Time = 5441430
+Elapsed Time = 10020913
+Elapsed Time = 40484087
+Elapsed Time = 5155551
+Elapsed Time = 5009350
+Elapsed Time = 5001951
+Elapsed Time = 40412048
+Elapsed Time = 5317002
+Elapsed Time = 109447
+Elapsed Time = 8085422
+Elapsed Time = 10128900
+Elapsed Time = 4781779
+Elapsed Time = 860992398
+Elapsed Time = 70425299
+Elapsed Time = 4946865
+Elapsed Time = 41179225
+Elapsed Time = 5074738
+Elapsed Time = 80730954
+Elapsed Time = 5174209
+Elapsed Time = 81289832
+Elapsed Time = 5064081
+Elapsed Time = 5231318
+Elapsed Time = 4970526
+Elapsed Time = 5264592
+Elapsed Time = 5250970
+Elapsed Time = 155477202
+Elapsed Time = 39896614
+Elapsed Time = 5396346
+Elapsed Time = 70483996
+Elapsed Time = 5036877
+Elapsed Time = 4834025
+Elapsed Time = 9872440
+Elapsed Time = 10068351
+Elapsed Time = 5099728
+Elapsed Time = 5092036
+Elapsed Time = 5047048
+Elapsed Time = 5241672
+Elapsed Time = 9834362
+Elapsed Time = 5043012
+Elapsed Time = 4973460
+Elapsed Time = 5288027
+Elapsed Time = 5052246
+Elapsed Time = 5185443
+Elapsed Time = 5024581
+Elapsed Time = 5364668
+Elapsed Time = 69932533
+Elapsed Time = 5061304
+Elapsed Time = 4885503
+Elapsed Time = 4704128
+Elapsed Time = 40166059
+Elapsed Time = 4954618
+Elapsed Time = 9801155
+Elapsed Time = 12523077
+Elapsed Time = 15120495
+Elapsed Time = 9758465
+Elapsed Time = 79081015
+Elapsed Time = 4931133
+Elapsed Time = 842363734
+Elapsed Time = 976260109
+Elapsed Time = 5079767
+Elapsed Time = 5105934
+Elapsed Time = 110299899
+Elapsed Time = 64138743
+Elapsed Time = 9700290
+Elapsed Time = 4901248
+Elapsed Time = 9907317
+Elapsed Time = 9506870
+Elapsed Time = 68251699
+Elapsed Time = 4984758
+Elapsed Time = 5178717
+Elapsed Time = 98833220
+Elapsed Time = 5012805
+Elapsed Time = 9930576
+Elapsed Time = 5291630
+Elapsed Time = 5206746
+Elapsed Time = 5261826
+Elapsed Time = 5087760
+Elapsed Time = 7236377
+Elapsed Time = 9939714
+Elapsed Time = 233679217
+Elapsed Time = 4982775
+Elapsed Time = 5067797
+Elapsed Time = 101009047
+Elapsed Time = 9755061
+Elapsed Time = 8061436
+Elapsed Time = 6835305
+Elapsed Time = 10024909
+Elapsed Time = 9866241
+Elapsed Time = 40166395
+Elapsed Time = 14737120
+Elapsed Time = 4908359
+Elapsed Time = 14648253
+Elapsed Time = 9712226
+Elapsed Time = 4887921
+Elapsed Time = 5301489
+Elapsed Time = 5343059
+Elapsed Time = 5011934
+Elapsed Time = 4930676
+Elapsed Time = 12730426
+Elapsed Time = 10139867
+Elapsed Time = 41053832
+Elapsed Time = 14484900
+Elapsed Time = 1012093078
+Elapsed Time = 5069494
+Elapsed Time = 9803816
+Elapsed Time = 4923769
+Elapsed Time = 4999775
+Elapsed Time = 5349311
+Elapsed Time = 5177161
+Elapsed Time = 5212420
+Elapsed Time = 4971196
+Elapsed Time = 7649216
+Elapsed Time = 7884845
+Elapsed Time = 5490066
+Elapsed Time = 10099994
+Elapsed Time = 5024065
+Elapsed Time = 1046274645
+Elapsed Time = 5001191
+Elapsed Time = 4881561
+Elapsed Time = 81701139
+Elapsed Time = 15286669
+Elapsed Time = 4926467
+Elapsed Time = 5081803
+Elapsed Time = 870199064
+Elapsed Time = 1045821994
+Elapsed Time = 82724025
+Elapsed Time = 5456848
+Elapsed Time = 9772630
+Elapsed Time = 35362411
+Elapsed Time = 49731041
+Elapsed Time = 14266699
+Elapsed Time = 85151225
+Elapsed Time = 4885372
+Elapsed Time = 9800714
+Elapsed Time = 9823898
+Elapsed Time = 75528400
+Elapsed Time = 5284526
+Elapsed Time = 40566696
+Elapsed Time = 5203725
+Elapsed Time = 40365893
+Elapsed Time = 60296731
+Elapsed Time = 5169322
+Elapsed Time = 14869154
+Elapsed Time = 5015965
+Elapsed Time = 4866776
+Elapsed Time = 194228146
+Elapsed Time = 9864975
+Elapsed Time = 876076719
+Elapsed Time = 5335329
+Elapsed Time = 5263628
+Elapsed Time = 4873020
+Elapsed Time = 4851837
+Elapsed Time = 99833427
+Elapsed Time = 9849694
+Elapsed Time = 40553099
+Elapsed Time = 42363966
+Elapsed Time = 4876562
+Elapsed Time = 43788121
+Elapsed Time = 15343736
+Elapsed Time = 45213369
+Elapsed Time = 39964187
+Elapsed Time = 5109581
+Elapsed Time = 9783090
+Elapsed Time = 310036807
+Elapsed Time = 5015835
+Elapsed Time = 119813721
+Elapsed Time = 5141065
+Elapsed Time = 5045781
+Elapsed Time = 104092737
+Elapsed Time = 5058584
+Elapsed Time = 5309617
+Elapsed Time = 4954485
+Elapsed Time = 24791391
+Elapsed Time = 5276171
+Elapsed Time = 5105612
+Elapsed Time = 5169446
+Elapsed Time = 24913795
+Elapsed Time = 10126305
+Elapsed Time = 4863185
+Elapsed Time = 4969920
+Elapsed Time = 4987265
+Elapsed Time = 14821765
+Elapsed Time = 4983506
+Elapsed Time = 5079877
+Elapsed Time = 9950526
+Elapsed Time = 5120799
+Elapsed Time = 5095354
+Elapsed Time = 5193683
+Elapsed Time = 5170674
+Elapsed Time = 41314894
+Elapsed Time = 64798288
+Elapsed Time = 5139524
+Elapsed Time = 5197145
+Elapsed Time = 9729107
+Elapsed Time = 5180494
+Elapsed Time = 15145118
+Elapsed Time = 20337794
+Elapsed Time = 15060300
+Elapsed Time = 10032168
+Elapsed Time = 10011646
+Elapsed Time = 9990703
+Elapsed Time = 4886684
+Elapsed Time = 10065807
+Elapsed Time = 113676
+Elapsed Time = 5245324
+Elapsed Time = 5086265
+Elapsed Time = 14570725
+Elapsed Time = 9815644
+Elapsed Time = 5067876
+Elapsed Time = 40906931
+Elapsed Time = 5265976
+Elapsed Time = 74431702
+Elapsed Time = 4950263
+Elapsed Time = 210402349
+Elapsed Time = 5079657
+Elapsed Time = 5005396
+Elapsed Time = 1098057391
+Elapsed Time = 19855620
+Elapsed Time = 5248611
+Elapsed Time = 9738278
+Elapsed Time = 4944375
+Elapsed Time = 4978780
+Elapsed Time = 4927373
+Elapsed Time = 40266338
+Elapsed Time = 5255879
+Elapsed Time = 34856040
+Elapsed Time = 5363290
+Elapsed Time = 5116619
+Elapsed Time = 5287648
+Elapsed Time = 9847128
+Elapsed Time = 30149145
+Elapsed Time = 5084590
+Elapsed Time = 47016697
+Elapsed Time = 10109346
+Elapsed Time = 5090301
+Elapsed Time = 10102934
+Elapsed Time = 10026016
+Elapsed Time = 4975543
+Elapsed Time = 5492631
+Elapsed Time = 5179957
+Elapsed Time = 5141349
+Elapsed Time = 5018213
+Elapsed Time = 80894338
+Elapsed Time = 4843948
+Elapsed Time = 9986810
+Elapsed Time = 40232640
+Elapsed Time = 5008079
+Elapsed Time = 10004848
+Elapsed Time = 91773491
+Elapsed Time = 41075584
+Elapsed Time = 4875215
+Elapsed Time = 14880931
+Elapsed Time = 41412248
+Elapsed Time = 5136857
+Elapsed Time = 81881599
+Elapsed Time = 1029133309
+Elapsed Time = 5299719
+Elapsed Time = 138629683
+Elapsed Time = 5187328
+Elapsed Time = 24845224
+Elapsed Time = 5119068
+Elapsed Time = 4906421
+Elapsed Time = 5020928
+Elapsed Time = 14845608
+Elapsed Time = 9653431
+Elapsed Time = 5009799
+Elapsed Time = 5003948
+Elapsed Time = 5353308
+Elapsed Time = 5407624
+Elapsed Time = 5271903
+Elapsed Time = 5293385
+Elapsed Time = 825737080
+Elapsed Time = 4735122
+Elapsed Time = 5346995
+Elapsed Time = 5288436
+Elapsed Time = 5020920
+Elapsed Time = 50688575
+Elapsed Time = 5092461
+Elapsed Time = 14545142
+Elapsed Time = 41017266
+Elapsed Time = 5062344
+Elapsed Time = 5242140
+Elapsed Time = 5135697
+Elapsed Time = 10119100
+Elapsed Time = 5319498
+Elapsed Time = 10065956
+Elapsed Time = 5185783
+Elapsed Time = 5389654
+Elapsed Time = 4913731
+Elapsed Time = 5059367
+Elapsed Time = 114213824
+Elapsed Time = 5064126
+Elapsed Time = 5035021
+Elapsed Time = 4975733
+Elapsed Time = 49810270
+Elapsed Time = 5423267
+Elapsed Time = 5728835
+Elapsed Time = 4945359
+Elapsed Time = 40609030
+Elapsed Time = 4880018
+Elapsed Time = 4774399
+Elapsed Time = 5420436
+Elapsed Time = 5074300
+Elapsed Time = 4937891
+Elapsed Time = 4948801
+Elapsed Time = 9747666
+Elapsed Time = 14899897
+Elapsed Time = 6963805
+Elapsed Time = 35552186
+Elapsed Time = 5095514
+Elapsed Time = 5008880
+Elapsed Time = 5044039
+Elapsed Time = 9922243
+Elapsed Time = 10054994
+Elapsed Time = 1076252155
+Elapsed Time = 4994756
+Elapsed Time = 80084642
+Elapsed Time = 97061414
+Elapsed Time = 65361794
+Elapsed Time = 40549555
+Elapsed Time = 5473077
+Elapsed Time = 4846638
+Elapsed Time = 14756202
+Elapsed Time = 50658332
+Elapsed Time = 5136661
+Elapsed Time = 5114420
+Elapsed Time = 5162727
+Elapsed Time = 7893180
+Elapsed Time = 111697294
+Elapsed Time = 5326399
+Elapsed Time = 9788772
+Elapsed Time = 40758627
+Elapsed Time = 13332945
+Elapsed Time = 5136596
+Elapsed Time = 5413580
+Elapsed Time = 875733236
+Elapsed Time = 5059419
+Elapsed Time = 5205552
+Elapsed Time = 5026692
+Elapsed Time = 364284793
+Elapsed Time = 10679598
+Elapsed Time = 9970451
+Elapsed Time = 9926946
+Elapsed Time = 5219963
+Elapsed Time = 5198786
+Elapsed Time = 9749715
+Elapsed Time = 9680186
+Elapsed Time = 5011356
+Elapsed Time = 5195981
+Elapsed Time = 5114319
+Elapsed Time = 4917230
+Elapsed Time = 925282194
+Elapsed Time = 5165121
+Elapsed Time = 34585895
+Elapsed Time = 14745322
+Elapsed Time = 40968061
+Elapsed Time = 5200012
+Elapsed Time = 33635214
+Elapsed Time = 5175329
+Elapsed Time = 9968609
+Elapsed Time = 9731239
+Elapsed Time = 9792084
+Elapsed Time = 5138311
+Elapsed Time = 9831237
+Elapsed Time = 10013494
+Elapsed Time = 9882878
+Elapsed Time = 14964254
+Elapsed Time = 40969254
+Elapsed Time = 7967034
+Elapsed Time = 41598869
+Elapsed Time = 10023973
+Elapsed Time = 5367484
+Elapsed Time = 4919464
+Elapsed Time = 40688557
+Elapsed Time = 5094491
+Elapsed Time = 4902161
+Elapsed Time = 40716100
+Elapsed Time = 82248894
+Elapsed Time = 5126844
+Elapsed Time = 12500941
+Elapsed Time = 4853097
+Elapsed Time = 9971379
+Elapsed Time = 5144196
+Elapsed Time = 5210694
+Elapsed Time = 167480925
+Elapsed Time = 5052923
+Elapsed Time = 51335636
+Elapsed Time = 10027377
+Elapsed Time = 8818980
+Elapsed Time = 14812482
+Elapsed Time = 40936653
+Elapsed Time = 24670099
+Elapsed Time = 41491032
+Elapsed Time = 5424929
+Elapsed Time = 12153826
+Elapsed Time = 128006502
+Elapsed Time = 4950341
+Elapsed Time = 4875981
+Elapsed Time = 4942068
+Elapsed Time = 5117854
+Elapsed Time = 5310332
+Elapsed Time = 5386376
+Elapsed Time = 4923255
+Elapsed Time = 5021874
+Elapsed Time = 40838011
+Elapsed Time = 9894555
+Elapsed Time = 10701952
+Elapsed Time = 4974161
+Elapsed Time = 860291560
+Elapsed Time = 4979059
+Elapsed Time = 29627710
+Elapsed Time = 14609492
+Elapsed Time = 35041092
+Elapsed Time = 4927358
+Elapsed Time = 4936622
+Elapsed Time = 5062298
+Elapsed Time = 37105141
+Elapsed Time = 41151676
+Elapsed Time = 14877602
+Elapsed Time = 4841776
+Elapsed Time = 5191939
+Elapsed Time = 5188110
+Elapsed Time = 5259403
+Elapsed Time = 40588375
+Elapsed Time = 70508736
+Elapsed Time = 4952851
+Elapsed Time = 4893863
+Elapsed Time = 10431539
+Elapsed Time = 5244363
+Elapsed Time = 190467659
+Elapsed Time = 10092670
+Elapsed Time = 50659655
+Elapsed Time = 5155981
+Elapsed Time = 5402597
+Elapsed Time = 5010111
+Elapsed Time = 4997342
+Elapsed Time = 4950109
+Elapsed Time = 4977289
+Elapsed Time = 4943742
+Elapsed Time = 5067945
+Elapsed Time = 5418908
+Elapsed Time = 40643056
+Elapsed Time = 4983441
+Elapsed Time = 9781262
+Elapsed Time = 5314522
+Elapsed Time = 4781737
+Elapsed Time = 10161534
+Elapsed Time = 10053320
+Elapsed Time = 4962566
+Elapsed Time = 101909
+Elapsed Time = 5009880
+Elapsed Time = 7589118
+Elapsed Time = 9914077
+Elapsed Time = 35921330
+Elapsed Time = 4905103
+Elapsed Time = 4848757
+Elapsed Time = 6905266
+Elapsed Time = 9936665
+Elapsed Time = 79816666
+Elapsed Time = 40127556
+Elapsed Time = 70094069
+Elapsed Time = 14733175
+Elapsed Time = 4765461
+Elapsed Time = 5313443
+Elapsed Time = 822685645
+Elapsed Time = 9887452
+Elapsed Time = 81907852
+Elapsed Time = 9797297
+Elapsed Time = 4958561
+Elapsed Time = 5007003
+Elapsed Time = 5115143
+Elapsed Time = 5086702
+Elapsed Time = 5114775
+Elapsed Time = 4832682
+Elapsed Time = 5305713
+Elapsed Time = 14438006
+Elapsed Time = 977471369
+Elapsed Time = 4919117
+Elapsed Time = 5308231
+Elapsed Time = 4871323
+Elapsed Time = 4806912
+Elapsed Time = 5028847
+Elapsed Time = 5024975
+Elapsed Time = 5003485
+Elapsed Time = 5025608
+Elapsed Time = 4944920
+Elapsed Time = 166755257
+Elapsed Time = 9750219
+Elapsed Time = 39888812
+Elapsed Time = 5006533
+Elapsed Time = 10127529
+Elapsed Time = 40947050
+Elapsed Time = 10364846
+Elapsed Time = 5025792
+Elapsed Time = 107009
+Elapsed Time = 4652513
+Elapsed Time = 10039196
+Elapsed Time = 2840041
+Elapsed Time = 72413251
+Elapsed Time = 15350333
+Elapsed Time = 9694931
+Elapsed Time = 4939929
+Elapsed Time = 5032275
+Elapsed Time = 5023626
+Elapsed Time = 4939732
+Elapsed Time = 4946146
+Elapsed Time = 5035346
+Elapsed Time = 4981103
+Elapsed Time = 70701176
+Elapsed Time = 4839411
+Elapsed Time = 4839189
+Elapsed Time = 4984394
+Elapsed Time = 4751806
+Elapsed Time = 9752998
+Elapsed Time = 5039031
+Elapsed Time = 19078906
+Elapsed Time = 5156609
+Elapsed Time = 5154906
+Elapsed Time = 71883827
+Elapsed Time = 4755969
+Elapsed Time = 5041511
+Elapsed Time = 4931893
+Elapsed Time = 5139549
+Elapsed Time = 19549981
+Elapsed Time = 14685873
+Elapsed Time = 5176101
+Elapsed Time = 9709593
+Elapsed Time = 24549531
+Elapsed Time = 4707333
+Elapsed Time = 5064761
+Elapsed Time = 39988199
+Elapsed Time = 5094206
+Elapsed Time = 231150828
+Elapsed Time = 5015228
+Elapsed Time = 5174397
+Elapsed Time = 4808028
+Elapsed Time = 40723550
+Elapsed Time = 10053497
+Elapsed Time = 9858954
+Elapsed Time = 41048186
+Elapsed Time = 5074779
+Elapsed Time = 70564778
+Elapsed Time = 111177207
+Elapsed Time = 79972665
+Elapsed Time = 5280283
+Elapsed Time = 5065642
+Elapsed Time = 34533949
+Elapsed Time = 40552156
+Elapsed Time = 5005773
+Elapsed Time = 68962135
+Elapsed Time = 4830682
+Elapsed Time = 5304345
+Elapsed Time = 4780425
+Elapsed Time = 17964470
+Elapsed Time = 4877513
+Elapsed Time = 4944310
+Elapsed Time = 5337891
+Elapsed Time = 9620181
+Elapsed Time = 9770330
+Elapsed Time = 5130904
+Elapsed Time = 33841071
+Elapsed Time = 4853664
+Elapsed Time = 40112406
+Elapsed Time = 4838324
+Elapsed Time = 14261409
+Elapsed Time = 5148956
+Elapsed Time = 4867935
+Elapsed Time = 9854293
+Elapsed Time = 143714747
+Elapsed Time = 4975938
+Elapsed Time = 4985596
+Elapsed Time = 5246015
+Elapsed Time = 1000899410
+Elapsed Time = 845689235
+Elapsed Time = 5044000
+Elapsed Time = 9636339
+Elapsed Time = 5114604
+Elapsed Time = 5040460
+Elapsed Time = 4948192
+Elapsed Time = 113304801
+Elapsed Time = 99730067
+Elapsed Time = 5359495
+Elapsed Time = 4860591
+Elapsed Time = 4984081
+Elapsed Time = 5303744
+Elapsed Time = 15085575
+Elapsed Time = 4866518
+Elapsed Time = 4974381
+Elapsed Time = 4794135
+Elapsed Time = 5044873
+Elapsed Time = 1062752649
+Elapsed Time = 4983441
+Elapsed Time = 33891022
+Elapsed Time = 5224849
+Elapsed Time = 9722579
+Elapsed Time = 14822068
+Elapsed Time = 5091534
+Elapsed Time = 19740408
+Elapsed Time = 5111668
+Elapsed Time = 5144224
+Elapsed Time = 143873500
+Elapsed Time = 5140243
+Elapsed Time = 4889128
+Elapsed Time = 40786262
+Elapsed Time = 5255328
+Elapsed Time = 4851386
+Elapsed Time = 4963600
+Elapsed Time = 41027217
+Elapsed Time = 5180219
+Elapsed Time = 69988385
+Elapsed Time = 5057499
+Elapsed Time = 5029882
+Elapsed Time = 15229465
+Elapsed Time = 5016180
+Elapsed Time = 5116316
+Elapsed Time = 5055095
+Elapsed Time = 4897797
+Elapsed Time = 5359838
+Elapsed Time = 4939856
+Elapsed Time = 5274388
+Elapsed Time = 9977179
+Elapsed Time = 9707747
+Elapsed Time = 5248054
+Elapsed Time = 4964381
+Elapsed Time = 5183508
+Elapsed Time = 15269169
+Elapsed Time = 5062285
+Elapsed Time = 4958986
+Elapsed Time = 26031200
+Elapsed Time = 50955642
+Elapsed Time = 5139370
+Elapsed Time = 9854209
+Elapsed Time = 5003116
+Elapsed Time = 963392119
+Elapsed Time = 8125649
+Elapsed Time = 35076653
+Elapsed Time = 40047007
